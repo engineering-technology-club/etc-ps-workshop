@@ -1,993 +1,1460 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
     <title>ورشة Problem Solving – ETC</title>
     <meta name="theme-color" content="#17264F" />
     <link rel="icon" href="images/club-logo.png" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap"
+    />
     <link rel="stylesheet" href="css/style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <canvas id="cv"></canvas>
     <div id="pb"></div>
     <div id="n"></div>
     <div class="disc" id="lg"><img src="images/club-logo.png" alt="ETC" /></div>
     <section class="s d" id="s1">
-        <div class="in">
-            <div class="sun" style="left:20px;top:-40px"></div>
-            <div class="gear" style="right:-180px;bottom:-260px;width:620px;opacity:.12"></div>
-            <div class="disc dbig a z" style="--i:1"><img src="images/club-logo.png" alt="ETC" /></div>
-            <h1 class="a" style="--i:2">ورشة<br /><em>Problem Solving</em></h1>
-            <div class="en a" style="--i:4">Think Before You Code</div>
-            <div class="ar a" style="--i:5">النادي الهندسي والتكنولوجي (ETC) – جامعة الأقصى</div>
+      <div class="in">
+        <div class="sun" style="left: 20px; top: -40px"></div>
+        <div
+          class="gear"
+          style="right: -180px; bottom: -260px; width: 620px; opacity: 0.12"
+        ></div>
+        <div class="disc dbig a z" style="--i: 1">
+          <img src="images/club-logo.png" alt="ETC" />
         </div>
+        <h1 class="a" style="--i: 2">ورشة<br /><em>Problem Solving</em></h1>
+        <div class="en a" style="--i: 4">Think Before You Code</div>
+        <div class="ar a" style="--i: 5">
+          النادي الهندسي والتكنولوجي (ETC) – جامعة الأقصى
+        </div>
+      </div>
     </section>
     <section class="s l" id="s2">
-        <div class="in">
-            <div class="gear" style="left:-220px;bottom:-260px;width:600px;opacity:.07"></div>
-            <h2 class="a">ماذا سنتعلّم اليوم؟</h2>
-            <div class="row n5">
-                <div class="st a z" style="--i:1"><i>1</i><b>عقلية حل المشكلات</b></div>
-                <div class="st a z" style="--i:2"><i>2</i><b>الأساس التقني</b></div>
-                <div class="st a z" style="--i:3"><i>3</i><b>تطبيق عملي على المسائل</b></div>
-                <div class="st a z" style="--i:4"><i>4</i><b>التحدي الختامي</b></div>
-            </div>
-            <div class="note a" style="--i:6">من فهم المشكلة إلى بناء الحل واختباره</div>
+      <div class="in">
+        <div
+          class="gear"
+          style="left: -220px; bottom: -260px; width: 600px; opacity: 0.07"
+        ></div>
+        <h2 class="a">ماذا سنتعلّم اليوم؟</h2>
+        <div class="row n5">
+          <div class="st a z" style="--i: 1">
+            <i>1</i><b>عقلية حل المشكلات</b>
+          </div>
+          <div class="st a z" style="--i: 2"><i>2</i><b>الأساس التقني</b></div>
+          <div class="st a z" style="--i: 3">
+            <i>3</i><b>تطبيق عملي على المسائل</b>
+          </div>
+          <div class="st a z" style="--i: 4"><i>4</i><b>التحدي الختامي</b></div>
         </div>
+        <div class="note a" style="--i: 6">
+          من فهم المشكلة إلى بناء الحل واختباره
+        </div>
+      </div>
     </section>
     <section class="s d" id="s3">
-        <div class="in">
-            <div class="gear" style="left:-230px;top:-120px;width:680px;opacity:.14"></div>
-            <div class="sun" style="left:-120px;top:60px;opacity:.5"></div>
-            <div class="ctr">
-                <div class="q a" style="--i:1">لو عندك 1000 رقم وبدك تلاقي رقم معيّن بينها… <mark>كيف ممكن تبحث
-                        عنه؟</mark></div>
-                <div class="t a" style="--i:3">هل توجد أكثر من طريقة؟ وهل جميع الطرق بنفس السرعة؟</div>
-                <div class="t a" style="--i:4">اختيار طريقة البحث يؤثر بشكل مباشر على كفاءة الحل</div>
-            </div>
+      <div class="in">
+        <div
+          class="gear"
+          style="left: -230px; top: -120px; width: 680px; opacity: 0.14"
+        ></div>
+        <div class="sun" style="left: -120px; top: 60px; opacity: 0.5"></div>
+        <div class="ctr">
+          <div class="q a" style="--i: 1">
+            لو عندك 1000 رقم وبدك تلاقي رقم معيّن بينها…
+            <mark>كيف ممكن تبحث عنه؟</mark>
+          </div>
+          <div class="t a" style="--i: 3">
+            هل توجد أكثر من طريقة؟ وهل جميع الطرق بنفس السرعة؟
+          </div>
+          <div class="t a" style="--i: 4">
+            اختيار طريقة البحث يؤثر بشكل مباشر على كفاءة الحل
+          </div>
         </div>
+      </div>
     </section>
     <section class="s d" id="s4">
-        <div class="in">
-            <div class="gear" style="left:-230px;top:-120px;width:680px;opacity:.14"></div>
-            <div class="sun" style="left:-120px;top:60px;opacity:.5"></div>
-            <h2 class="a">ما هو Problem Solving؟</h2>
-            <p class="big a r" style="--i:2"><mark>فهم المشكلة</mark> وتحليل تفاصيلها، ثم تصميم خطوات منطقية لحلها،
-                وكتابة الحل واختباره للتأكد من صحته وكفاءته.</p>
-        </div>
+      <div class="in">
+        <div
+          class="gear"
+          style="left: -230px; top: -120px; width: 680px; opacity: 0.14"
+        ></div>
+        <div class="sun" style="left: -120px; top: 60px; opacity: 0.5"></div>
+        <h2 class="a">ما هو Problem Solving؟</h2>
+        <p class="big a r" style="--i: 2">
+          <mark>فهم المشكلة</mark> وتحليل تفاصيلها، ثم تصميم خطوات منطقية لحلها،
+          وكتابة الحل واختباره للتأكد من صحته وكفاءته.
+        </p>
+      </div>
     </section>
     <section class="s l" id="s5">
-        <div class="in">
-            <div class="gear" style="right:-200px;bottom:-250px;width:600px;opacity:.07"></div>
-            <h2 class="a">Programmer مقابل Problem Solver</h2>
-            <div class="row ">
-                <div class="st a z" style="--i:1"><b>Programmer</b>
-                    <p>يركّز على كتابة الكود وتنفيذ الحل</p>
-                </div>
-                <div class="st a z" style="--i:2"><b>Problem Solver</b>
-                    <p>يبدأ بفهم المشكلة، ويحلّلها، ثم يختار الطريقة الأنسب قبل كتابة الكود</p>
-                </div>
-            </div>
-            <div class="note a" style="--i:6">البرمجة ليست كتابة كود فقط؛ بل تبدأ بالتفكير في الحل</div>
+      <div class="in">
+        <div
+          class="gear"
+          style="right: -200px; bottom: -250px; width: 600px; opacity: 0.07"
+        ></div>
+        <h2 class="a">Programmer مقابل Problem Solver</h2>
+        <div class="row">
+          <div class="st a z" style="--i: 1">
+            <b>Programmer</b>
+            <p>يركّز على كتابة الكود وتنفيذ الحل</p>
+          </div>
+          <div class="st a z" style="--i: 2">
+            <b>Problem Solver</b>
+            <p>
+              يبدأ بفهم المشكلة، ويحلّلها، ثم يختار الطريقة الأنسب قبل كتابة
+              الكود
+            </p>
+          </div>
         </div>
+        <div class="note a" style="--i: 6">
+          البرمجة ليست كتابة كود فقط؛ بل تبدأ بالتفكير في الحل
+        </div>
+      </div>
     </section>
     <section class="s l" id="s6">
-        <div class="in">
-            <div class="gear" style="left:-220px;bottom:-260px;width:600px;opacity:.07"></div>
-            <h2 class="a">لماذا نحتاج Problem Solving؟</h2>
-            <div class="g g4">
-                <div class="cd c a r" style="--i:1">
-                    <div class="ico"><svg viewBox="0 0 24 24">
-                            <path
-                                d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.8.8 1 1.5 1 2.5h6c0-1 .2-1.7 1-2.5A6 6 0 0 0 12 3z" />
-                        </svg></div>
-                    <div><b>تفكير منطقي وتحليلي</b>
-                        <p>فهم المشكلة وتقسيمها إلى أجزاء واضحة</p>
-                    </div>
-                </div>
-                <div class="cd c a r" style="--i:1">
-                    <div class="ico"><svg viewBox="0 0 24 24">
-                            <path d="M12 3v6M12 9L5 15M12 9l7 6M5 15v6M19 15v6" />
-                        </svg></div>
-                    <div><b>التعامل مع مشكلات جديدة</b>
-                        <p>تطوير القدرة على إيجاد حلول لمشكلات غير مألوفة</p>
-                    </div>
-                </div>
-                <div class="cd c a l2" style="--i:2">
-                    <div class="ico"><svg viewBox="0 0 24 24">
-                            <path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14" />
-                        </svg></div>
-                    <div><b>حلول أكثر كفاءة</b>
-                        <p>استغلال أفضل للوقت والذاكرة</p>
-                    </div>
-                </div>
-                <div class="cd c a l2" style="--i:2">
-                    <div class="ico"><svg viewBox="0 0 24 24">
-                            <path
-                                d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4zM7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3" />
-                        </svg></div>
-                    <div><b>المسابقات والمقابلات</b>
-                        <p>مهارة أساسية في ICPC وCodeforces ومقابلات العمل التقنية</p>
-                    </div>
-                </div>
+      <div class="in">
+        <div
+          class="gear"
+          style="left: -220px; bottom: -260px; width: 600px; opacity: 0.07"
+        ></div>
+        <h2 class="a">لماذا نحتاج Problem Solving؟</h2>
+        <div class="g g4">
+          <div class="cd c a r" style="--i: 1">
+            <div class="ico">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.8.8 1 1.5 1 2.5h6c0-1 .2-1.7 1-2.5A6 6 0 0 0 12 3z"
+                />
+              </svg>
             </div>
-            <div class="note a" style="--i:6">مهارة أساسية لكل من يريد تطوير مستواه البرمجي</div>
+            <div>
+              <b>تفكير منطقي وتحليلي</b>
+              <p>فهم المشكلة وتقسيمها إلى أجزاء واضحة</p>
+            </div>
+          </div>
+          <div class="cd c a r" style="--i: 1">
+            <div class="ico">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 3v6M12 9L5 15M12 9l7 6M5 15v6M19 15v6" />
+              </svg>
+            </div>
+            <div>
+              <b>التعامل مع مشكلات جديدة</b>
+              <p>تطوير القدرة على إيجاد حلول لمشكلات غير مألوفة</p>
+            </div>
+          </div>
+          <div class="cd c a l2" style="--i: 2">
+            <div class="ico">
+              <svg viewBox="0 0 24 24">
+                <path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14" />
+              </svg>
+            </div>
+            <div>
+              <b>حلول أكثر كفاءة</b>
+              <p>استغلال أفضل للوقت والذاكرة</p>
+            </div>
+          </div>
+          <div class="cd c a l2" style="--i: 2">
+            <div class="ico">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4zM7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3"
+                />
+              </svg>
+            </div>
+            <div>
+              <b>المسابقات والمقابلات</b>
+              <p>مهارة أساسية في ICPC وCodeforces ومقابلات العمل التقنية</p>
+            </div>
+          </div>
         </div>
+        <div class="note a" style="--i: 6">
+          مهارة أساسية لكل من يريد تطوير مستواه البرمجي
+        </div>
+      </div>
     </section>
     <section class="s d" id="s7">
-        <div class="in">
-            <div class="gear" style="left:-230px;top:-120px;width:680px;opacity:.14"></div>
-            <div class="sun" style="left:-120px;top:60px;opacity:.5"></div>
-            <div class="ctr">
-                <div class="q a" style="--i:1">الذكاء الاصطناعي أداة قوية… <mark>لكن هل يكفي أن نحصل على إجابة؟</mark>
-                </div>
-                <div class="t a" style="--i:3">فهم المشكلة يساعدنا على طرح أسئلة دقيقة وتقييم الإجابات والتحقق من صحتها
-                </div>
-                <div class="t a" style="--i:4">الفهم أولاً، ثم الاستفادة من الأدوات</div>
-            </div>
+      <div class="in">
+        <div
+          class="gear"
+          style="left: -230px; top: -120px; width: 680px; opacity: 0.14"
+        ></div>
+        <div class="sun" style="left: -120px; top: 60px; opacity: 0.5"></div>
+        <div class="ctr">
+          <div class="q a" style="--i: 1">
+            الذكاء الاصطناعي أداة قوية…
+            <mark>لكن هل يكفي أن نحصل على إجابة؟</mark>
+          </div>
+          <div class="t a" style="--i: 3">
+            فهم المشكلة يساعدنا على طرح أسئلة دقيقة وتقييم الإجابات والتحقق من
+            صحتها
+          </div>
+          <div class="t a" style="--i: 4">
+            الفهم أولاً، ثم الاستفادة من الأدوات
+          </div>
         </div>
+      </div>
     </section>
     <section class="s d" id="s8">
-        <div class="in">
-            <div class="gear" style="left:-230px;top:-120px;width:680px;opacity:.14"></div>
-            <div class="sun" style="left:-120px;top:60px;opacity:.5"></div>
-            <h2 class="a">مراحل حل المشكلات</h2>
-            <div class="row n7">
-                <div class="st a z" style="--i:1"><i>1</i><b>Understand</b>
-                    <p>فهم المطلوب والمدخلات والمخرجات والقيود</p>
-                </div>
-                <div class="st a z" style="--i:2"><i>2</i><b>Analyze</b>
-                    <p>تحليل المشكلة وتحديد الحالات والأمثلة</p>
-                </div>
-                <div class="st a z" style="--i:3"><i>3</i><b>Design</b>
-                    <p>اختيار الفكرة وتصميم الخوارزمية المناسبة</p>
-                </div>
-                <div class="st a z" style="--i:4"><i>4</i><b>Implement</b>
-                    <p>تحويل الحل إلى كود</p>
-                </div>
-                <div class="st a z" style="--i:5"><i>5</i><b>Test &amp; Debug</b>
-                    <p>اختبار الحل واكتشاف الأخطاء ومعالجتها</p>
-                </div>
-                <div class="st a z" style="--i:6"><i>6</i><b>Optimize</b>
-                    <p>تحسين استهلاك الوقت والذاكرة عند الحاجة</p>
-                </div>
-            </div>
+      <div class="in">
+        <div
+          class="gear"
+          style="left: -230px; top: -120px; width: 680px; opacity: 0.14"
+        ></div>
+        <div class="sun" style="left: -120px; top: 60px; opacity: 0.5"></div>
+        <h2 class="a">مراحل حل المشكلات</h2>
+        <div class="row n7">
+          <div class="st a z" style="--i: 1">
+            <i>1</i><b>Understand</b>
+            <p>فهم المطلوب والمدخلات والمخرجات والقيود</p>
+          </div>
+          <div class="st a z" style="--i: 2">
+            <i>2</i><b>Analyze</b>
+            <p>تحليل المشكلة وتحديد الحالات والأمثلة</p>
+          </div>
+          <div class="st a z" style="--i: 3">
+            <i>3</i><b>Design</b>
+            <p>اختيار الفكرة وتصميم الخوارزمية المناسبة</p>
+          </div>
+          <div class="st a z" style="--i: 4">
+            <i>4</i><b>Implement</b>
+            <p>تحويل الحل إلى كود</p>
+          </div>
+          <div class="st a z" style="--i: 5">
+            <i>5</i><b>Test &amp; Debug</b>
+            <p>اختبار الحل واكتشاف الأخطاء ومعالجتها</p>
+          </div>
+          <div class="st a z" style="--i: 6">
+            <i>6</i><b>Optimize</b>
+            <p>تحسين استهلاك الوقت والذاكرة عند الحاجة</p>
+          </div>
         </div>
+      </div>
     </section>
     <section class="s l" id="s9">
-        <div class="in">
-            <div class="gear" style="right:-200px;bottom:-250px;width:600px;opacity:.07"></div>
-            <h2 class="a">ماذا تتضمن كل مرحلة؟</h2>
-            <table class="tb a" style="--i:2;font-size:23px">
-                <tr>
-                    <th>المرحلة</th>
-                    <th>ما الذي نحدده؟</th>
-                </tr>
-                <tr>
-                    <td>1. Understand</td>
-                    <td>ما المعطيات؟ ما المطلوب؟ ما حدود المدخلات؟ وهل يمكن توضيح المشكلة بمثال؟</td>
-                </tr>
-                <tr>
-                    <td>2. Analyze</td>
-                    <td>ما الحالات الخاصة؟ مثل المدخل الفارغ، وعنصر واحد، والقيم المكررة أو السالبة</td>
-                </tr>
-                <tr>
-                    <td>3. Design</td>
-                    <td>ما الحل الممكن؟ وهل توجد طريقة أبسط أو أكثر كفاءة؟</td>
-                </tr>
-                <tr>
-                    <td>4. Implement</td>
-                    <td>تحويل الخطوات إلى كود واضح ومنظّم</td>
-                </tr>
-                <tr>
-                    <td>5. Test &amp; Debug</td>
-                    <td>اختبار الحالات المختلفة واكتشاف الحالات التي قد يفشل فيها الحل</td>
-                </tr>
-                <tr>
-                    <td>6. Optimize</td>
-                    <td>تحسين استهلاك الوقت والذاكرة بعد التأكد من صحة الحل</td>
-                </tr>
-            </table>
-        </div>
+      <div class="in">
+        <div
+          class="gear"
+          style="right: -200px; bottom: -250px; width: 600px; opacity: 0.07"
+        ></div>
+        <h2 class="a">ماذا تتضمن كل مرحلة؟</h2>
+        <table class="tb a" style="--i: 2; font-size: 23px">
+          <tr>
+            <th>المرحلة</th>
+            <th>ما الذي نحدده؟</th>
+          </tr>
+          <tr>
+            <td>1. Understand</td>
+            <td>
+              ما المعطيات؟ ما المطلوب؟ ما حدود المدخلات؟ وهل يمكن توضيح المشكلة
+              بمثال؟
+            </td>
+          </tr>
+          <tr>
+            <td>2. Analyze</td>
+            <td>
+              ما الحالات الخاصة؟ مثل المدخل الفارغ، وعنصر واحد، والقيم المكررة
+              أو السالبة
+            </td>
+          </tr>
+          <tr>
+            <td>3. Design</td>
+            <td>ما الحل الممكن؟ وهل توجد طريقة أبسط أو أكثر كفاءة؟</td>
+          </tr>
+          <tr>
+            <td>4. Implement</td>
+            <td>تحويل الخطوات إلى كود واضح ومنظّم</td>
+          </tr>
+          <tr>
+            <td>5. Test &amp; Debug</td>
+            <td>
+              اختبار الحالات المختلفة واكتشاف الحالات التي قد يفشل فيها الحل
+            </td>
+          </tr>
+          <tr>
+            <td>6. Optimize</td>
+            <td>تحسين استهلاك الوقت والذاكرة بعد التأكد من صحة الحل</td>
+          </tr>
+        </table>
+      </div>
     </section>
     <section class="s d" id="s10">
-        <div class="in">
-            <div class="gear" style="left:-230px;top:-120px;width:680px;opacity:.14"></div>
-            <div class="sun" style="left:-120px;top:60px;opacity:.5"></div>
-            <h2 class="a">ثلاث قواعد أساسية</h2>
-            <div class="row n5">
-                <div class="st a z" style="--i:1"><b>Think Before You Code</b>
-                    <p>افهم المشكلة وحدّد المطلوب قبل البدء بالكتابة</p>
-                </div>
-                <div class="st a z" style="--i:2"><b>Correctness Before Optimization</b>
-                    <p>تأكد من صحة الحل أولاً، ثم حسّن كفاءته</p>
-                </div>
-                <div class="st a z" style="--i:3"><b>Every Problem Has a Strategy</b>
-                    <p>اختيار الاستراتيجية المناسبة يسهّل الوصول إلى الحل</p>
-                </div>
-            </div>
+      <div class="in">
+        <div
+          class="gear"
+          style="left: -230px; top: -120px; width: 680px; opacity: 0.14"
+        ></div>
+        <div class="sun" style="left: -120px; top: 60px; opacity: 0.5"></div>
+        <h2 class="a">ثلاث قواعد أساسية</h2>
+        <div class="row n5">
+          <div class="st a z" style="--i: 1">
+            <b>Think Before You Code</b>
+            <p>افهم المشكلة وحدّد المطلوب قبل البدء بالكتابة</p>
+          </div>
+          <div class="st a z" style="--i: 2">
+            <b>Correctness Before Optimization</b>
+            <p>تأكد من صحة الحل أولاً، ثم حسّن كفاءته</p>
+          </div>
+          <div class="st a z" style="--i: 3">
+            <b>Every Problem Has a Strategy</b>
+            <p>اختيار الاستراتيجية المناسبة يسهّل الوصول إلى الحل</p>
+          </div>
         </div>
+      </div>
     </section>
     <section class="s d" id="s11">
-        <div class="in">
-            <div class="gear" style="left:-230px;top:-120px;width:680px;opacity:.14"></div>
-            <div class="sun" style="left:-120px;top:60px;opacity:.5"></div>
-            <h2 class="a">مثال على التفكير المنطقي</h2>
-            <p class="prob a" style="--i:2;font-size:30px">لدينا قائمة بالأرقام الجامعية لمجموعة من الطلاب، ونريد معرفة
-                <mark>هل يوجد رقمان متطابقان؟</mark> يمكن مقارنة كل رقم ببقية الأرقام، لكن هل هذه الطريقة هي الأفضل؟</p>
-            <div class="chips a" style="--i:5"><span class="chip">المطلوب: اكتشاف التكرار</span><span class="chip">الحل
-                    المباشر: مقارنة العناصر</span><span class="chip">الهدف: الوصول إلى طريقة أكثر كفاءة</span></div>
+      <div class="in">
+        <div
+          class="gear"
+          style="left: -230px; top: -120px; width: 680px; opacity: 0.14"
+        ></div>
+        <div class="sun" style="left: -120px; top: 60px; opacity: 0.5"></div>
+        <h2 class="a">مثال على التفكير المنطقي</h2>
+        <p class="prob a" style="--i: 2; font-size: 30px">
+          لدينا قائمة بالأرقام الجامعية لمجموعة من الطلاب، ونريد معرفة
+          <mark>هل يوجد رقمان متطابقان؟</mark> يمكن مقارنة كل رقم ببقية الأرقام،
+          لكن هل هذه الطريقة هي الأفضل؟
+        </p>
+        <div class="chips a" style="--i: 5">
+          <span class="chip">المطلوب: اكتشاف التكرار</span
+          ><span class="chip">الحل المباشر: مقارنة العناصر</span
+          ><span class="chip">الهدف: الوصول إلى طريقة أكثر كفاءة</span>
         </div>
+      </div>
     </section>
     <section class="s l" id="s12">
-        <div class="in">
-            <div class="gear" style="left:-220px;bottom:-260px;width:600px;opacity:.07"></div>
-            <h2 class="a">الأساس التقني</h2>
-            <div class="row ">
-                <div class="st a z" style="--i:1"><b>Algorithms</b>
-                    <p>خطوات مرتبة وواضحة للوصول إلى نتيجة محددة</p>
-                </div>
-                <div class="st a z" style="--i:2"><b>Data Structures</b>
-                    <p>طرق لتنظيم البيانات وتخزينها والتعامل معها</p>
-                </div>
-                <div class="st a z" style="--i:3"><b>Complexity</b>
-                    <p>قياس كفاءة الحل من حيث الوقت والذاكرة</p>
-                </div>
-            </div>
-            <div class="note a" style="--i:6">حل المشكلة يعتمد على تنظيم البيانات واختيار الخطوات المناسبة وقياس الكفاءة
-            </div>
+      <div class="in">
+        <div
+          class="gear"
+          style="left: -220px; bottom: -260px; width: 600px; opacity: 0.07"
+        ></div>
+        <h2 class="a">الأساس التقني</h2>
+        <div class="row">
+          <div class="st a z" style="--i: 1">
+            <b>Algorithms</b>
+            <p>خطوات مرتبة وواضحة للوصول إلى نتيجة محددة</p>
+          </div>
+          <div class="st a z" style="--i: 2">
+            <b>Data Structures</b>
+            <p>طرق لتنظيم البيانات وتخزينها والتعامل معها</p>
+          </div>
+          <div class="st a z" style="--i: 3">
+            <b>Complexity</b>
+            <p>قياس كفاءة الحل من حيث الوقت والذاكرة</p>
+          </div>
         </div>
+        <div class="note a" style="--i: 6">
+          حل المشكلة يعتمد على تنظيم البيانات واختيار الخطوات المناسبة وقياس
+          الكفاءة
+        </div>
+      </div>
+    </section>
+
+    <section class="s d" id="s12-bridge">
+      <div class="in">
+        <div
+          class="gear"
+          style="left: -230px; top: -120px; width: 680px; opacity: 0.14"
+        ></div>
+        <div class="sun" style="left: -120px; top: 60px; opacity: 0.35"></div>
+
+        <h2 class="a">كيف ترتبط Data Structures بالAlgorithms؟</h2>
+
+        <p class="bridge-intro a" style="--i: 1">
+          لنفترض أننا نريد البحث عن رقم جامعي لطالب داخل قائمة من الأرقام. كيف
+          نحول هذا المطلوب إلى حل برمجي؟
+        </p>
+
+        <div class="bridge-flow">
+          <div class="bridge-card a" style="--i: 2">
+            <span class="bridge-num">01</span>
+            <b>Problem</b>
+            <p>نحدد المشكلة التي نريد حلها.</p>
+          </div>
+
+          <div class="bridge-arrow a" style="--i: 2">←</div>
+
+          <div class="bridge-card a" style="--i: 3">
+            <span class="bridge-num">02</span>
+            <b>Data Structure</b>
+            <p>نختار طريقة مناسبة لتنظيم البيانات، مثل Array.</p>
+          </div>
+
+          <div class="bridge-arrow a" style="--i: 3">←</div>
+
+          <div class="bridge-card a" style="--i: 4">
+            <span class="bridge-num">03</span>
+            <b>Algorithm</b>
+            <p>نحدد الخطوات التي سنستخدمها للبحث عن الرقم.</p>
+          </div>
+
+          <div class="bridge-arrow a" style="--i: 4">←</div>
+
+          <div class="bridge-card a" style="--i: 5">
+            <span class="bridge-num">04</span>
+            <b>Solution</b>
+            <p>نصل إلى النتيجة المطلوبة بطريقة صحيحة.</p>
+          </div>
+        </div>
+
+        <div class="bridge-note a" style="--i: 6">
+          Data Structures تنظّم البيانات، وAlgorithms تحدد كيفية التعامل معها.
+        </div>
+      </div>
     </section>
     <section class="s l" id="s13">
-        <div class="in">
-            <div class="gear" style="right:-200px;bottom:-250px;width:600px;opacity:.07"></div>
-            <h2 class="a">أشهر أنواع Algorithms</h2>
-            <div class="g g4">
-                <div class="cd c a r" style="--i:1">
-                    <div class="ico"><svg viewBox="0 0 24 24">
-                            <path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z" />
-                        </svg></div>
-                    <div><b>Searching</b>
-                        <p>البحث عن عنصر داخل مجموعة من البيانات</p>
-                    </div>
-                </div>
-                <div class="cd c a r" style="--i:1">
-                    <div class="ico"><svg viewBox="0 0 24 24">
-                            <path d="M4 6h16M4 12h12M4 18h8" />
-                        </svg></div>
-                    <div><b>Sorting</b>
-                        <p>ترتيب البيانات وفق معيار محدد</p>
-                    </div>
-                </div>
-                <div class="cd c a l2" style="--i:2">
-                    <div class="ico"><svg viewBox="0 0 24 24">
-                            <path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z" />
-                        </svg></div>
-                    <div><b>Greedy</b>
-                        <p>اختيار أفضل خيار متاح في كل خطوة</p>
-                    </div>
-                </div>
-                <div class="cd c a l2" style="--i:2">
-                    <div class="ico"><svg viewBox="0 0 24 24">
-                            <path d="M12 3v6M12 9L5 15M12 9l7 6M5 15v6M19 15v6" />
-                        </svg></div>
-                    <div><b>Recursion</b>
-                        <p>حل المشكلة من خلال استدعاء الحل لمشكلة أصغر من النوع نفسه</p>
-                    </div>
-                </div>
+      <div class="in">
+        <div
+          class="gear"
+          style="right: -200px; bottom: -250px; width: 600px; opacity: 0.07"
+        ></div>
+        <h2 class="a">أشهر أنواع Algorithms</h2>
+        <div class="g g4">
+          <div class="cd c a r" style="--i: 1">
+            <div class="ico">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"
+                />
+              </svg>
             </div>
-            <div class="note a" style="--i:6">Dynamic Programming: الاستفادة من نتائج المسائل الفرعية لتجنّب إعادة
-                الحساب</div>
+            <div>
+              <b>Searching</b>
+              <p>البحث عن عنصر داخل مجموعة من البيانات</p>
+            </div>
+          </div>
+          <div class="cd c a r" style="--i: 1">
+            <div class="ico">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 6h16M4 12h12M4 18h8" />
+              </svg>
+            </div>
+            <div>
+              <b>Sorting</b>
+              <p>ترتيب البيانات وفق معيار محدد</p>
+            </div>
+          </div>
+          <div class="cd c a l2" style="--i: 2">
+            <div class="ico">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z" />
+              </svg>
+            </div>
+            <div>
+              <b>Greedy</b>
+              <p>اختيار أفضل خيار متاح في كل خطوة</p>
+            </div>
+          </div>
+          <div class="cd c a l2" style="--i: 2">
+            <div class="ico">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 3v6M12 9L5 15M12 9l7 6M5 15v6M19 15v6" />
+              </svg>
+            </div>
+            <div>
+              <b>Recursion</b>
+              <p>حل المشكلة من خلال استدعاء الحل لمشكلة أصغر من النوع نفسه</p>
+            </div>
+          </div>
         </div>
+        <div class="note a" style="--i: 6">
+          Dynamic Programming: الاستفادة من نتائج المسائل الفرعية لتجنّب إعادة
+          الحساب
+        </div>
+      </div>
     </section>
     <section class="s l" id="s14">
-        <div class="in">
-            <div class="gear" style="left:-220px;bottom:-260px;width:600px;opacity:.07"></div>
-            <h2 class="a">Data Structures: Array</h2>
-            <div class="pic a l2" style="--i:2;width:680px"><img src="images/ds-array.jpg" alt="" /></div>
-            <div class="pan a r" style="--i:3">
-                <h3>متى نستخدمها؟</h3>
-                <ul>
-                    <li>تخزّن العناصر في مواقع متجاورة في الذاكرة، والوصول إليها باستخدام Index يكون O(1)</li>
-                    <li>في C++، حجم الـ Array التقليدية ثابت بعد إنشائها</li>
-                    <li>مناسبة عندما نحتاج إلى وصول سريع للعناصر والمرور عليها بالترتيب</li>
-                </ul>
-            </div>
+      <div class="in">
+        <div
+          class="gear"
+          style="left: -220px; bottom: -260px; width: 600px; opacity: 0.07"
+        ></div>
+        <h2 class="a">Data Structures: Array</h2>
+        <div class="pic a l2" style="--i: 2; width: 680px">
+          <img src="images/ds-array.jpg" alt="" />
         </div>
+        <div class="pan a r" style="--i: 3">
+          <h3>متى نستخدمها؟</h3>
+          <ul>
+            <li>
+              تخزّن العناصر في مواقع متجاورة في الذاكرة، والوصول إليها باستخدام
+              Index يكون O(1)
+            </li>
+            <li>في C++، حجم الـ Array التقليدية ثابت بعد إنشائها</li>
+            <li>
+              مناسبة عندما نحتاج إلى وصول سريع للعناصر والمرور عليها بالترتيب
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
     <section class="s l" id="s15">
-        <div class="in">
-            <div class="gear" style="right:-200px;bottom:-250px;width:600px;opacity:.07"></div>
-            <h2 class="a">Data Structures: Linked List</h2>
-            <div class="pic a l2" style="--i:2;width:680px"><img src="images/ds-linked.jpg" alt="" /></div>
-            <div class="pan a r" style="--i:3">
-                <h3>متى نستخدمها؟</h3>
-                <ul>
-                    <li>تتكوّن من Nodes، تحتوي كل واحدة منها على قيمة ومؤشر إلى العقدة التالية</li>
-                    <li>الإضافة والحذف سهلان عند الوصول إلى الموقع المطلوب، أما الوصول باستخدام Index فيستغرق O(n)</li>
-                    <li>مناسبة عندما تتكرر عمليات الإضافة والحذف ولا نحتاج إلى وصول مباشر للعناصر</li>
-                </ul>
-            </div>
+      <div class="in">
+        <div
+          class="gear"
+          style="right: -200px; bottom: -250px; width: 600px; opacity: 0.07"
+        ></div>
+        <h2 class="a">Data Structures: Linked List</h2>
+        <div class="pic a l2" style="--i: 2; width: 680px">
+          <img src="images/ds-linked.jpg" alt="" />
         </div>
+        <div class="pan a r" style="--i: 3">
+          <h3>متى نستخدمها؟</h3>
+          <ul>
+            <li>
+              تتكوّن من Nodes، تحتوي كل واحدة منها على قيمة ومؤشر إلى العقدة
+              التالية
+            </li>
+            <li>
+              الإضافة والحذف سهلان عند الوصول إلى الموقع المطلوب، أما الوصول
+              باستخدام Index فيستغرق O(n)
+            </li>
+            <li>
+              مناسبة عندما تتكرر عمليات الإضافة والحذف ولا نحتاج إلى وصول مباشر
+              للعناصر
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
     <section class="s l" id="s16">
-        <div class="in">
-            <div class="gear" style="left:-220px;bottom:-260px;width:600px;opacity:.07"></div>
-            <h2 class="a">Data Structures: Stack</h2>
-            <div class="pic a l2" style="--i:2;width:680px"><img src="images/ds-stack.jpg" alt="" /></div>
-            <div class="pan a r" style="--i:3">
-                <h3>كيف يعمل؟</h3>
-                <ul>
-                    <li>LIFO: آخر عنصر تتم إضافته هو أول عنصر تتم إزالته</li>
-                    <li>push لإضافة عنصر، وpop لإزالة العنصر الموجود في الأعلى</li>
-                    <li>يُستخدم في Undo، والتحقق من الأقواس المتوازنة، واستدعاءات الدوال</li>
-                </ul>
-            </div>
+      <div class="in">
+        <div
+          class="gear"
+          style="left: -220px; bottom: -260px; width: 600px; opacity: 0.07"
+        ></div>
+        <h2 class="a">Data Structures: Stack</h2>
+        <div class="pic a l2" style="--i: 2; width: 680px">
+          <img src="images/ds-stack.jpg" alt="" />
         </div>
+        <div class="pan a r" style="--i: 3">
+          <h3>كيف يعمل؟</h3>
+          <ul>
+            <li>LIFO: آخر عنصر تتم إضافته هو أول عنصر تتم إزالته</li>
+            <li>push لإضافة عنصر، وpop لإزالة العنصر الموجود في الأعلى</li>
+            <li>
+              يُستخدم في Undo، والتحقق من الأقواس المتوازنة، واستدعاءات الدوال
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
     <section class="s l" id="s17">
-        <div class="in">
-            <div class="gear" style="right:-200px;bottom:-250px;width:600px;opacity:.07"></div>
-            <h2 class="a">Data Structures: Queue</h2>
-            <div class="pic a l2" style="--i:2;width:680px"><img src="images/ds-queue.jpg" alt="" /></div>
-            <div class="pan a r" style="--i:3">
-                <h3>كيف يعمل؟</h3>
-                <ul>
-                    <li>FIFO: أول عنصر تتم إضافته هو أول عنصر تتم إزالته</li>
-                    <li>Enqueue لإضافة عنصر من الخلف، وDequeue لإزالته من الأمام</li>
-                    <li>يُستخدم في تنظيم الطلبات، والطباعة، وخوارزمية BFS</li>
-                </ul>
-            </div>
+      <div class="in">
+        <div
+          class="gear"
+          style="right: -200px; bottom: -250px; width: 600px; opacity: 0.07"
+        ></div>
+        <h2 class="a">Data Structures: Queue</h2>
+        <div class="pic a l2" style="--i: 2; width: 680px">
+          <img src="images/ds-queue.jpg" alt="" />
         </div>
+        <div class="pan a r" style="--i: 3">
+          <h3>كيف يعمل؟</h3>
+          <ul>
+            <li>FIFO: أول عنصر تتم إضافته هو أول عنصر تتم إزالته</li>
+            <li>Enqueue لإضافة عنصر من الخلف، وDequeue لإزالته من الأمام</li>
+            <li>يُستخدم في تنظيم الطلبات، والطباعة، وخوارزمية BFS</li>
+          </ul>
+        </div>
+      </div>
     </section>
     <section class="s l" id="s18">
-        <div class="in">
-            <div class="gear" style="left:-220px;bottom:-260px;width:600px;opacity:.07"></div>
-            <h2 class="a">Data Structures: Hash Table</h2>
-            <div class="pic a l2" style="--i:2;width:680px"><img src="images/ds-hash.jpg" alt="" /></div>
-            <div class="pan a r" style="--i:3">
-                <h3>كيف تعمل؟</h3>
-                <ul>
-                    <li>تستخدم Hash Function لتحويل المفتاح إلى موقع للتخزين</li>
-                    <li>البحث والإضافة يستغرقان O(1) في المتوسط</li>
-                    <li>مناسبة للتحقق من وجود عنصر أو حساب عدد مرات التكرار</li>
-                </ul>
-            </div>
+      <div class="in">
+        <div
+          class="gear"
+          style="left: -220px; bottom: -260px; width: 600px; opacity: 0.07"
+        ></div>
+        <h2 class="a">Data Structures: Hash Table</h2>
+        <div class="pic a l2" style="--i: 2; width: 680px">
+          <img src="images/ds-hash.jpg" alt="" />
         </div>
+        <div class="pan a r" style="--i: 3">
+          <h3>كيف تعمل؟</h3>
+          <ul>
+            <li>تستخدم Hash Function لتحويل المفتاح إلى موقع للتخزين</li>
+            <li>البحث والإضافة يستغرقان O(1) في المتوسط</li>
+            <li>مناسبة للتحقق من وجود عنصر أو حساب عدد مرات التكرار</li>
+          </ul>
+        </div>
+      </div>
     </section>
     <section class="s l" id="s19">
-        <div class="in">
-            <div class="gear" style="right:-200px;bottom:-250px;width:600px;opacity:.07"></div>
-            <h2 class="a">Data Structures: Tree</h2>
-            <div class="pic a l2" style="--i:2;width:680px"><img src="images/ds-tree.jpg" alt="" /></div>
-            <div class="pan a r" style="--i:3">
-                <h3>متى نستخدمها؟</h3>
-                <ul>
-                    <li>تتكوّن من Root وNodes وEdges، ويمكن أن تحتوي العقدة على أبناء</li>
-                    <li>مناسبة لتنظيم البيانات ذات العلاقات الهرمية</li>
-                    <li>تُستخدم في تنظيم الملفات والمجلدات، وفي عمليات البحث باستخدام Balanced Search Trees</li>
-                </ul>
-            </div>
+      <div class="in">
+        <div
+          class="gear"
+          style="right: -200px; bottom: -250px; width: 600px; opacity: 0.07"
+        ></div>
+        <h2 class="a">Data Structures: Tree</h2>
+        <div class="pic a l2" style="--i: 2; width: 680px">
+          <img src="images/ds-tree.jpg" alt="" />
         </div>
+        <div class="pan a r" style="--i: 3">
+          <h3>متى نستخدمها؟</h3>
+          <ul>
+            <li>
+              تتكوّن من Root وNodes وEdges، ويمكن أن تحتوي العقدة على أبناء
+            </li>
+            <li>مناسبة لتنظيم البيانات ذات العلاقات الهرمية</li>
+            <li>
+              تُستخدم في تنظيم الملفات والمجلدات، وفي عمليات البحث باستخدام
+              Balanced Search Trees
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
     <section class="s l" id="s20">
-        <div class="in">
-            <div class="gear" style="left:-220px;bottom:-260px;width:600px;opacity:.07"></div>
-            <h2 class="a">كيف نختار Data Structure المناسبة؟</h2>
-            <table class="tb a" style="--i:2">
-                <tr>
-                    <th>العملية المطلوبة</th>
-                    <th>الهيكل المناسب</th>
-                </tr>
-                <tr>
-                    <td>الوصول المباشر باستخدام Index</td>
-                    <td>Array</td>
-                </tr>
-                <tr>
-                    <td>التحقق من وجود عنصر أو حساب التكرارات</td>
-                    <td>Hash Table</td>
-                </tr>
-                <tr>
-                    <td>آخر عنصر يدخل هو أول عنصر يخرج (Undo، الأقواس)</td>
-                    <td>Stack</td>
-                </tr>
-                <tr>
-                    <td>أول عنصر يدخل هو أول عنصر يخرج (الطلبات بالترتيب)</td>
-                    <td>Queue</td>
-                </tr>
-                <tr>
-                    <td>إضافة وحذف العناصر بشكل متكرر</td>
-                    <td>Linked List</td>
-                </tr>
-                <tr>
-                    <td>تنظيم البيانات ذات العلاقات الهرمية</td>
-                    <td>Tree</td>
-                </tr>
-            </table>
-            <div class="note a" style="--i:6">اختيار Data Structure يعتمد على طبيعة العمليات التي نحتاجها</div>
+      <div class="in">
+        <div
+          class="gear"
+          style="left: -220px; bottom: -260px; width: 600px; opacity: 0.07"
+        ></div>
+        <h2 class="a">كيف نختار Data Structure المناسبة؟</h2>
+        <table class="tb a" style="--i: 2">
+          <tr>
+            <th>العملية المطلوبة</th>
+            <th>الهيكل المناسب</th>
+          </tr>
+          <tr>
+            <td>الوصول المباشر باستخدام Index</td>
+            <td>Array</td>
+          </tr>
+          <tr>
+            <td>التحقق من وجود عنصر أو حساب التكرارات</td>
+            <td>Hash Table</td>
+          </tr>
+          <tr>
+            <td>آخر عنصر يدخل هو أول عنصر يخرج (Undo، الأقواس)</td>
+            <td>Stack</td>
+          </tr>
+          <tr>
+            <td>أول عنصر يدخل هو أول عنصر يخرج (الطلبات بالترتيب)</td>
+            <td>Queue</td>
+          </tr>
+          <tr>
+            <td>إضافة وحذف العناصر بشكل متكرر</td>
+            <td>Linked List</td>
+          </tr>
+          <tr>
+            <td>تنظيم البيانات ذات العلاقات الهرمية</td>
+            <td>Tree</td>
+          </tr>
+        </table>
+        <div class="note a" style="--i: 6">
+          اختيار Data Structure يعتمد على طبيعة العمليات التي نحتاجها
         </div>
+      </div>
     </section>
     <section class="s l" id="s21">
-        <div class="in">
-            <div class="gear" style="right:-200px;bottom:-250px;width:600px;opacity:.07"></div>
-            <h2 class="a">الحل الصحيح ليس بالضرورة الأكثر كفاءة</h2>
-            <div class="row ">
-                <div class="st a z" style="--i:1"><b>Time Complexity</b>
-                    <p>كيف يتغيّر عدد العمليات مع زيادة حجم المدخلات؟</p>
-                </div>
-                <div class="st a z" style="--i:2"><b>Space Complexity</b>
-                    <p>كيف تتغيّر الذاكرة الإضافية التي يحتاجها الحل؟</p>
-                </div>
-            </div>
-            <div class="note a" style="--i:6">قد تعطي طريقتان النتيجة نفسها، لكن باختلاف كبير في الكفاءة</div>
+      <div class="in">
+        <div
+          class="gear"
+          style="right: -200px; bottom: -250px; width: 600px; opacity: 0.07"
+        ></div>
+        <h2 class="a">الحل الصحيح ليس بالضرورة الأكثر كفاءة</h2>
+        <div class="row">
+          <div class="st a z" style="--i: 1">
+            <b>Time Complexity</b>
+            <p>كيف يتغيّر عدد العمليات مع زيادة حجم المدخلات؟</p>
+          </div>
+          <div class="st a z" style="--i: 2">
+            <b>Space Complexity</b>
+            <p>كيف تتغيّر الذاكرة الإضافية التي يحتاجها الحل؟</p>
+          </div>
         </div>
+        <div class="note a" style="--i: 6">
+          قد تعطي طريقتان النتيجة نفسها، لكن باختلاف كبير في الكفاءة
+        </div>
+      </div>
     </section>
     <section class="s l" id="s22">
-        <div class="in">
-            <div class="gear" style="left:-220px;bottom:-260px;width:600px;opacity:.07"></div>
-            <h2 class="a">مقارنة نمو التعقيدات</h2>
-            <div class="pic a" style="--i:2;width:853px;left:213px"><img src="images/bigo.jpg" alt="" /></div>
+      <div class="in">
+        <div
+          class="gear"
+          style="left: -220px; bottom: -260px; width: 600px; opacity: 0.07"
+        ></div>
+        <h2 class="a">مقارنة نمو التعقيدات</h2>
+        <div class="pic a" style="--i: 2; width: 853px; left: 213px">
+          <img src="images/bigo.jpg" alt="" />
         </div>
+      </div>
     </section>
     <section class="s l" id="s23">
-        <div class="in">
-            <div class="gear" style="right:-200px;bottom:-250px;width:600px;opacity:.07"></div>
-            <h2 class="a">أشهر أنواع Time Complexity</h2>
-            <table class="tb a" style="--i:2">
-                <tr>
-                    <th>التعقيد</th>
-                    <th>مثال</th>
-                    <th>عدد العمليات عند n = 1,000,000</th>
-                </tr>
-                <tr>
-                    <td>O(1)</td>
-                    <td>الوصول إلى عنصر باستخدام Index</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>O(log n)</td>
-                    <td>Binary Search</td>
-                    <td>≈ 20</td>
-                </tr>
-                <tr>
-                    <td>O(n)</td>
-                    <td>المرور على Array</td>
-                    <td>1,000,000</td>
-                </tr>
-                <tr>
-                    <td>O(n log n)</td>
-                    <td>Merge Sort</td>
-                    <td>≈ 20,000,000</td>
-                </tr>
-                <tr>
-                    <td>O(n²)</td>
-                    <td>مقارنة كل عنصر مع بقية العناصر</td>
-                    <td>1,000,000,000,000</td>
-                </tr>
-            </table>
-        </div>
+      <div class="in">
+        <div
+          class="gear"
+          style="right: -200px; bottom: -250px; width: 600px; opacity: 0.07"
+        ></div>
+        <h2 class="a">أشهر أنواع Time Complexity</h2>
+        <table class="tb a" style="--i: 2">
+          <tr>
+            <th>التعقيد</th>
+            <th>مثال</th>
+            <th>عدد العمليات عند n = 1,000,000</th>
+          </tr>
+          <tr>
+            <td>O(1)</td>
+            <td>الوصول إلى عنصر باستخدام Index</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>O(log n)</td>
+            <td>Binary Search</td>
+            <td>≈ 20</td>
+          </tr>
+          <tr>
+            <td>O(n)</td>
+            <td>المرور على Array</td>
+            <td>1,000,000</td>
+          </tr>
+          <tr>
+            <td>O(n log n)</td>
+            <td>Merge Sort</td>
+            <td>≈ 20,000,000</td>
+          </tr>
+          <tr>
+            <td>O(n²)</td>
+            <td>مقارنة كل عنصر مع بقية العناصر</td>
+            <td>1,000,000,000,000</td>
+          </tr>
+        </table>
+      </div>
     </section>
     <section class="s d" id="s24">
-        <div class="in">
-            <div class="gear" style="left:-230px;top:-120px;width:680px;opacity:.14"></div>
-            <div class="sun" style="left:-120px;top:60px;opacity:.5"></div>
-            <div class="ctr">
-                <div class="q a" style="--i:1"><mark>حوالي 3 ساعات</mark> مقابل <mark>0.01 ثانية</mark></div>
-                <div class="t a" style="--i:3">عند تنفيذ 100 مليون عملية في الثانية، قد يستغرق O(n²) وقتاً أطول بكثير من
-                    O(n) عند التعامل مع مليون عنصر</div>
-                <div class="t a" style="--i:4">اختيار الخوارزمية المناسبة يصنع فرقاً كبيراً</div>
-            </div>
+      <div class="in">
+        <div
+          class="gear"
+          style="left: -230px; top: -120px; width: 680px; opacity: 0.14"
+        ></div>
+        <div class="sun" style="left: -120px; top: 60px; opacity: 0.5"></div>
+        <div class="ctr">
+          <div class="q a" style="--i: 1">
+            <mark>حوالي 3 ساعات</mark> مقابل <mark>0.01 ثانية</mark>
+          </div>
+          <div class="t a" style="--i: 3">
+            عند تنفيذ 100 مليون عملية في الثانية، قد يستغرق O(n²) وقتاً أطول
+            بكثير من O(n) عند التعامل مع مليون عنصر
+          </div>
+          <div class="t a" style="--i: 4">
+            اختيار الخوارزمية المناسبة يصنع فرقاً كبيراً
+          </div>
         </div>
+      </div>
     </section>
     <section class="s d" id="s25">
-        <div class="in">
-            <div class="gear" style="left:-230px;top:-120px;width:680px;opacity:.14"></div>
-            <div class="sun" style="left:-120px;top:60px;opacity:.5"></div>
-            <h2 class="a">خطوات التعامل مع المسائل</h2>
-            <div class="row n5">
-                <div class="st a z" style="--i:1"><i>1</i><b>فهم المشكلة</b>
-                    <p>تحديد المطلوب والمدخلات والمخرجات</p>
-                </div>
-                <div class="st a z" style="--i:2"><i>2</i><b>التحليل</b>
-                    <p>تحديد القيود والحالات الخاصة</p>
-                </div>
-                <div class="st a z" style="--i:3"><i>3</i><b>تصميم الحل</b>
-                    <p>اختيار الفكرة والخوارزمية المناسبة</p>
-                </div>
-                <div class="st a z" style="--i:4"><i>4</i><b>كتابة الكود</b>
-                    <p>تنفيذ الحل باستخدام C++</p>
-                </div>
-                <div class="st a z" style="--i:5"><b>الاختبار والتحسين</b>
-                    <p>التحقق من الصحة ومراجعة الكفاءة</p>
-                </div>
-            </div>
-            <div class="note a" style="--i:6">كل مسألة نحلّها تمر بهذه المراحل</div>
+      <div class="in">
+        <div
+          class="gear"
+          style="left: -230px; top: -120px; width: 680px; opacity: 0.14"
+        ></div>
+        <div class="sun" style="left: -120px; top: 60px; opacity: 0.5"></div>
+        <h2 class="a">خطوات التعامل مع المسائل</h2>
+        <div class="row n5">
+          <div class="st a z" style="--i: 1">
+            <i>1</i><b>فهم المشكلة</b>
+            <p>تحديد المطلوب والمدخلات والمخرجات</p>
+          </div>
+          <div class="st a z" style="--i: 2">
+            <i>2</i><b>التحليل</b>
+            <p>تحديد القيود والحالات الخاصة</p>
+          </div>
+          <div class="st a z" style="--i: 3">
+            <i>3</i><b>تصميم الحل</b>
+            <p>اختيار الفكرة والخوارزمية المناسبة</p>
+          </div>
+          <div class="st a z" style="--i: 4">
+            <i>4</i><b>كتابة الكود</b>
+            <p>تنفيذ الحل باستخدام C++</p>
+          </div>
+          <div class="st a z" style="--i: 5">
+            <b>الاختبار والتحسين</b>
+            <p>التحقق من الصحة ومراجعة الكفاءة</p>
+          </div>
         </div>
+        <div class="note a" style="--i: 6">
+          كل مسألة نحلّها تمر بهذه المراحل
+        </div>
+      </div>
     </section>
 
     <section class="s d" id="s26">
-        <div class="in">
-            <div class="gear" style="left:-230px;top:-120px;width:680px;opacity:.14"></div>
-            <div class="sun" style="left:-120px;top:60px;opacity:.5"></div>
-            <h2 class="a">هل لغة البرمجة بتفرق في Problem Solving؟</h2>
-            <div class="lang-lead a" style="--i:1">
-                <p>الفكرة الأساسية واحدة: <b>نفهم المشكلة ونصمّم Algorithm صحيحة</b>، وبعدها نكتبها باللغة التي نختارها.</p>
-                <p>لكن اللغة تؤثر على طريقة كتابة الحل، وسرعة التنفيذ، وسهولة التعامل مع بعض الأدوات.</p>
-            </div>
-            <div class="lang-grid">
-                <div class="lang-card a" style="--i:2"><span class="lang-mark">C++</span><b>أداء عالٍ</b><p>سريعة، وتوفّر STL ومكتبات مهمة للمسابقات.</p></div>
-                <div class="lang-card a" style="--i:3"><span class="lang-mark">Python</span><b>سهلة القراءة</b><p>صياغتها مختصرة، ومناسبة للتجربة وكتابة الحلول بسرعة.</p></div>
-                <div class="lang-card a" style="--i:4"><span class="lang-mark">Java</span><b>منظّمة وقوية</b><p>توفّر Collections وأداء جيداً، لكن الكود غالباً أطول.</p></div>
-                <div class="lang-card a" style="--i:5"><span class="lang-mark">JavaScript</span><b>مرنة</b><p>مفيدة في مجالات الويب، وتُستخدم أيضاً في بعض منصات المسابقات.</p></div>
-            </div>
-            <div class="note a" style="--i:6">اللغة أداة لتنفيذ الحل؛ وليست هي الحل نفسه</div>
+      <div class="in">
+        <div
+          class="gear"
+          style="left: -230px; top: -120px; width: 680px; opacity: 0.14"
+        ></div>
+        <div class="sun" style="left: -120px; top: 60px; opacity: 0.5"></div>
+        <h2 class="a">هل لغة البرمجة بتفرق في Problem Solving؟</h2>
+        <div class="lang-lead a" style="--i: 1">
+          <p>
+            الفكرة الأساسية واحدة: <b>نفهم المشكلة ونصمّم Algorithm صحيحة</b>،
+            وبعدها نكتبها باللغة التي نختارها.
+          </p>
+          <p>
+            لكن اللغة تؤثر على طريقة كتابة الحل، وسرعة التنفيذ، وسهولة التعامل
+            مع بعض الأدوات.
+          </p>
         </div>
+        <div class="lang-grid">
+          <div class="lang-card a" style="--i: 2">
+            <span class="lang-mark">C++</span><b>أداء عالٍ</b>
+            <p>سريعة، وتوفّر STL ومكتبات مهمة للمسابقات.</p>
+          </div>
+          <div class="lang-card a" style="--i: 3">
+            <span class="lang-mark">Python</span><b>سهلة القراءة</b>
+            <p>صياغتها مختصرة، ومناسبة للتجربة وكتابة الحلول بسرعة.</p>
+          </div>
+          <div class="lang-card a" style="--i: 4">
+            <span class="lang-mark">Java</span><b>منظّمة وقوية</b>
+            <p>توفّر Collections وأداء جيداً، لكن الكود غالباً أطول.</p>
+          </div>
+          <div class="lang-card a" style="--i: 5">
+            <span class="lang-mark">JavaScript</span><b>مرنة</b>
+            <p>مفيدة في مجالات الويب، وتُستخدم أيضاً في بعض منصات المسابقات.</p>
+          </div>
+        </div>
+        <div class="note a" style="--i: 6">
+          اللغة أداة لتنفيذ الحل؛ وليست هي الحل نفسه
+        </div>
+      </div>
     </section>
     <section class="s l" id="s27">
-        <div class="in">
-            <div class="gear" style="right:-200px;bottom:-250px;width:600px;opacity:.07"></div>
-            <h2 class="a">مقارنة سريعة بين اللغات</h2>
-            <table class="tb lang-table a" style="--i:2">
-                <tr><th>اللغة</th><th>نقاط القوة</th><th>أمور ننتبه لها في المسابقات</th></tr>
-                <tr><td><b>C++</b></td><td>سرعة التنفيذ، STL، تحكم أكبر بالذاكرة</td><td>تحتاج انتباهاً للأنواع والذاكرة وبعض التفاصيل</td></tr>
-                <tr><td><b>Python</b></td><td>كود قصير وواضح، وأعداد صحيحة كبيرة تلقائياً</td><td>قد تكون أبطأ في المسائل ذات القيود الكبيرة</td></tr>
-                <tr><td><b>Java</b></td><td>Collections، وأنواع واضحة، وأداء جيد</td><td>كود أطول واستهلاك ذاكرة قد يكون أعلى</td></tr>
-                <tr><td><b>JavaScript</b></td><td>مرنة وسهلة لمن يعرف بيئة الويب</td><td>الانتباه إلى Number والدقة وحدود الأعداد</td></tr>
-            </table>
-            <div class="lang-foot a" style="--i:4">لا توجد لغة هي الأفضل في كل الحالات؛ الاختيار يعتمد على طبيعة المسألة، والقيود، واللغة المسموح بها في المنصة.</div>
+      <div class="in">
+        <div
+          class="gear"
+          style="right: -200px; bottom: -250px; width: 600px; opacity: 0.07"
+        ></div>
+        <h2 class="a">مقارنة سريعة بين اللغات</h2>
+        <table class="tb lang-table a" style="--i: 2">
+          <tr>
+            <th>اللغة</th>
+            <th>نقاط القوة</th>
+            <th>أمور ننتبه لها في المسابقات</th>
+          </tr>
+          <tr>
+            <td><b>C++</b></td>
+            <td>سرعة التنفيذ، STL، تحكم أكبر بالذاكرة</td>
+            <td>تحتاج انتباهاً للأنواع والذاكرة وبعض التفاصيل</td>
+          </tr>
+          <tr>
+            <td><b>Python</b></td>
+            <td>كود قصير وواضح، وأعداد صحيحة كبيرة تلقائياً</td>
+            <td>قد تكون أبطأ في المسائل ذات القيود الكبيرة</td>
+          </tr>
+          <tr>
+            <td><b>Java</b></td>
+            <td>Collections، وأنواع واضحة، وأداء جيد</td>
+            <td>كود أطول واستهلاك ذاكرة قد يكون أعلى</td>
+          </tr>
+          <tr>
+            <td><b>JavaScript</b></td>
+            <td>مرنة وسهلة لمن يعرف بيئة الويب</td>
+            <td>الانتباه إلى Number والدقة وحدود الأعداد</td>
+          </tr>
+        </table>
+        <div class="lang-foot a" style="--i: 4">
+          لا توجد لغة هي الأفضل في كل الحالات؛ الاختيار يعتمد على طبيعة المسألة،
+          والقيود، واللغة المسموح بها في المنصة.
         </div>
+      </div>
     </section>
     <section class="s d" id="s28">
-        <div class="in">
-            <div class="gear" style="left:-230px;top:-120px;width:680px;opacity:.14"></div>
-            <div class="sun" style="left:-120px;top:60px;opacity:.5"></div>
-            <h2 class="a">طيب، شو الأفضل للمسابقات؟</h2>
-            <div class="lang-choice a" style="--i:2">
-                <div class="lang-choice-main"><span>C++</span><b>اختيار عملي ممتاز للمسابقات التنافسية</b></div>
-                <ul>
-                    <li>أداء سريع، ومناسبة للمسائل ذات القيود الكبيرة.</li>
-                    <li>مكتبة STL توفّر أدوات جاهزة مثل <code>vector</code> و<code>sort</code> و<code>queue</code> و<code>map</code>.</li>
-                    <li>مدعومة على نطاق واسع في منصات مثل Codeforces وICPC.</li>
-                </ul>
-            </div>
-            <div class="lang-bottom a" style="--i:4">
-                <div><b>هل هذا يعني أن Python أو Java سيئتان؟</b><p>بالتأكيد لا. استخدم اللغة التي تتقنها وتسمح بها المسابقة، وتعلّم نقاط قوتها وحدودها.</p></div>
-                <div><b>ماذا سنستخدم في الورشة؟</b><p><code>C++</code> حتى نركّز على الخوارزميات وطرق التفكير الشائعة في المسابقات.</p></div>
-            </div>
-            <div class="note a" style="--i:6">تعلّم التفكير أولاً، ثم أتقن لغة واحدة ووسّع أدواتك تدريجياً</div>
+      <div class="in">
+        <div
+          class="gear"
+          style="left: -230px; top: -120px; width: 680px; opacity: 0.14"
+        ></div>
+        <div class="sun" style="left: -120px; top: 60px; opacity: 0.5"></div>
+        <h2 class="a">طيب، شو الأفضل للمسابقات؟</h2>
+        <div class="lang-choice a" style="--i: 2">
+          <div class="lang-choice-main">
+            <span>C++</span><b>اختيار عملي ممتاز للمسابقات التنافسية</b>
+          </div>
+          <ul>
+            <li>أداء سريع، ومناسبة للمسائل ذات القيود الكبيرة.</li>
+            <li>
+              مكتبة STL توفّر أدوات جاهزة مثل <code>vector</code> و<code
+                >sort</code
+              >
+              و<code>queue</code> و<code>map</code>.
+            </li>
+            <li>مدعومة على نطاق واسع في منصات مثل Codeforces وICPC.</li>
+          </ul>
         </div>
+        <div class="lang-bottom a" style="--i: 4">
+          <div>
+            <b>هل هذا يعني أن Python أو Java سيئتان؟</b>
+            <p>
+              بالتأكيد لا. استخدم اللغة التي تتقنها وتسمح بها المسابقة، وتعلّم
+              نقاط قوتها وحدودها.
+            </p>
+          </div>
+          <div>
+            <b>ماذا سنستخدم في الورشة؟</b>
+            <p>
+              <code>C++</code> حتى نركّز على الخوارزميات وطرق التفكير الشائعة في
+              المسابقات.
+            </p>
+          </div>
+        </div>
+        <div class="note a" style="--i: 6">
+          تعلّم التفكير أولاً، ثم أتقن لغة واحدة ووسّع أدواتك تدريجياً
+        </div>
+      </div>
     </section>
 
     <section class="s d" id="s29">
-        <div class="in">
-            <div class="gear" style="left:-230px;top:-120px;width:680px;opacity:.14"></div>
-            <div class="sun" style="left:-120px;top:60px;opacity:.5"></div>
-            <h2 class="a">Problem 1: Balanced Parentheses</h2>
-            <div class="problem-meta a" style="--i:1"><span>Problem 1</span><span>Topic: Stack</span><span>Data Structures</span></div>
-
-            <div class="statement a" style="--i:2">
-                <div class="statement-card description">
-                    <h3>Problem Description</h3>
-                    <p>
-                        Given a string <b dir="ltr">s</b> consisting only of the bracket characters
-                        <span dir="ltr">()</span>, <span dir="ltr">[]</span>, and
-                        <span dir="ltr">{}</span>, determine whether the brackets are balanced.
-                    </p>
-                    <p>
-                        A string is balanced if every opening bracket has a matching closing
-                        bracket of the same type, and each pair of brackets is closed in the
-                        correct order. For example, <span dir="ltr">([])</span> is balanced,
-                        while <span dir="ltr">([)]</span> is not.
-                    </p>
-                </div>
-
-                <div class="statement-details">
-                    <div class="statement-card">
-                        <h3>Input</h3>
-                        <p>A single line containing a string <b dir="ltr">s</b>.</p>
-                    </div>
-
-                    <div class="statement-card">
-                        <h3>Output</h3>
-                        <p>
-                            Print <b>YES</b> if the string contains correctly matched and
-                            ordered brackets; otherwise, print <b>NO</b>.
-                        </p>
-                    </div>
-
-                    <div class="statement-card">
-                        <h3>Constraints</h3>
-                        <code dir="ltr">1 ≤ |s| ≤ 100,000</code>
-                        <p>
-                            The string contains only the characters
-                            <span dir="ltr">()[]{}</span>.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="statement-card examples">
-                    <h3>Examples</h3>
-                    <div class="example-grid">
-                        <div>
-                            <h4>Sample Input</h4>
-                            <pre dir="ltr">()[]{}</pre>
-                        </div>
-                        <div>
-                            <h4>Sample Output</h4>
-                            <pre dir="ltr">YES</pre>
-                        </div>
-                        <div>
-                            <h4>Sample Input</h4>
-                            <pre dir="ltr">([)]</pre>
-                        </div>
-                        <div>
-                            <h4>Sample Output</h4>
-                            <pre dir="ltr">NO</pre>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="in">
+        <div
+          class="gear"
+          style="left: -230px; top: -120px; width: 680px; opacity: 0.14"
+        ></div>
+        <div class="sun" style="left: -120px; top: 60px; opacity: 0.5"></div>
+        <h2 class="a">Problem 1: Balanced Parentheses</h2>
+        <div class="problem-meta a" style="--i: 1">
+          <span>Problem 1</span><span>Topic: Stack</span
+          ><span>Data Structures</span>
         </div>
+
+        <div class="statement a" style="--i: 2">
+          <div class="statement-card description">
+            <h3>Problem Description</h3>
+            <p>
+              Given a string <b dir="ltr">s</b> consisting only of the bracket
+              characters <span dir="ltr">()</span>, <span dir="ltr">[]</span>,
+              and <span dir="ltr">{}</span>, determine whether the brackets are
+              balanced.
+            </p>
+            <p>
+              A string is balanced if every opening bracket has a matching
+              closing bracket of the same type, and each pair of brackets is
+              closed in the correct order. For example,
+              <span dir="ltr">([])</span> is balanced, while
+              <span dir="ltr">([)]</span> is not.
+            </p>
+          </div>
+
+          <div class="statement-details">
+            <div class="statement-card">
+              <h3>Input</h3>
+              <p>A single line containing a string <b dir="ltr">s</b>.</p>
+            </div>
+
+            <div class="statement-card">
+              <h3>Output</h3>
+              <p>
+                Print <b>YES</b> if the string contains correctly matched and
+                ordered brackets; otherwise, print <b>NO</b>.
+              </p>
+            </div>
+
+            <div class="statement-card">
+              <h3>Constraints</h3>
+              <code dir="ltr">1 ≤ |s| ≤ 100,000</code>
+              <p>
+                The string contains only the characters
+                <span dir="ltr">()[]{}</span>.
+              </p>
+            </div>
+          </div>
+
+          <div class="statement-card examples">
+            <h3>Examples</h3>
+            <div class="example-grid">
+              <div>
+                <h4>Sample Input</h4>
+                <pre dir="ltr">()[]{}</pre>
+              </div>
+              <div>
+                <h4>Sample Output</h4>
+                <pre dir="ltr">YES</pre>
+              </div>
+              <div>
+                <h4>Sample Input</h4>
+                <pre dir="ltr">([)]</pre>
+              </div>
+              <div>
+                <h4>Sample Output</h4>
+                <pre dir="ltr">NO</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="s l" id="s30">
-        <div class="in">
-            <div class="gear" style="right:-200px;bottom:-250px;width:600px;opacity:.07"></div>
-            <h2 class="a">المسألة 1: تحليل الحل</h2>
-            <div class="row ">
-                <div class="st a z" style="--i:1"><b>فهم المشكلة</b>
-                    <p>المدخل نص يحتوي على أقواس، والمخرج YES أو NO</p>
-                </div>
-                <div class="st a z" style="--i:2"><b>تحليل المطلوب</b>
-                    <p>آخر قوس تم فتحه هو أول قوس يجب إغلاقه</p>
-                </div>
-                <div class="st a z" style="--i:3"><b>اختيار Data Structure</b>
-                    <p>Stack لأن طريقة عمله تعتمد على LIFO</p>
-                </div>
-            </div>
-            <div class="note a" style="--i:6">طبيعة المشكلة تقودنا إلى اختيار Stack</div>
+      <div class="in">
+        <div
+          class="gear"
+          style="right: -200px; bottom: -250px; width: 600px; opacity: 0.07"
+        ></div>
+        <h2 class="a">المسألة 1: تحليل الحل</h2>
+        <div class="row">
+          <div class="st a z" style="--i: 1">
+            <b>فهم المشكلة</b>
+            <p>المدخل نص يحتوي على أقواس، والمخرج YES أو NO</p>
+          </div>
+          <div class="st a z" style="--i: 2">
+            <b>تحليل المطلوب</b>
+            <p>آخر قوس تم فتحه هو أول قوس يجب إغلاقه</p>
+          </div>
+          <div class="st a z" style="--i: 3">
+            <b>اختيار Data Structure</b>
+            <p>Stack لأن طريقة عمله تعتمد على LIFO</p>
+          </div>
         </div>
+        <div class="note a" style="--i: 6">
+          طبيعة المشكلة تقودنا إلى اختيار Stack
+        </div>
+      </div>
     </section>
     <section class="s l" id="s31">
-        <div class="in">
-            <div class="gear" style="left:-220px;bottom:-260px;width:600px;opacity:.07"></div>
-            <h2 class="a">المسألة 1: الاختبار والتعقيد</h2>
-            <table class="tb a" style="--i:2">
-                <tr>
-                    <th>الاختبار</th>
-                    <th>النتيجة</th>
-                    <th>السبب</th>
-                </tr>
-                <tr>
-                    <td><span dir="ltr" style="unicode-bidi:isolate">{[()]}</span></td>
-                    <td>YES</td>
-                    <td>جميع الأقواس أُغلقت بالترتيب الصحيح</td>
-                </tr>
-                <tr>
-                    <td><span dir="ltr" style="unicode-bidi:isolate">([)]</span></td>
-                    <td>NO</td>
-                    <td>ترتيب الإغلاق غير صحيح</td>
-                </tr>
-                <tr>
-                    <td><span dir="ltr" style="unicode-bidi:isolate">((</span></td>
-                    <td>NO</td>
-                    <td>بقيت أقواس مفتوحة داخل Stack</td>
-                </tr>
-                <tr>
-                    <td><span dir="ltr" style="unicode-bidi:isolate">)</span></td>
-                    <td>NO</td>
-                    <td>يوجد قوس إغلاق دون قوس فتح سابق</td>
-                </tr>
-            </table>
-            <div class="note a" style="--i:6">Time Complexity: O(n) · Space Complexity: O(n)</div>
+      <div class="in">
+        <div
+          class="gear"
+          style="left: -220px; bottom: -260px; width: 600px; opacity: 0.07"
+        ></div>
+        <h2 class="a">المسألة 1: الاختبار والتعقيد</h2>
+        <table class="tb a" style="--i: 2">
+          <tr>
+            <th>الاختبار</th>
+            <th>النتيجة</th>
+            <th>السبب</th>
+          </tr>
+          <tr>
+            <td><span dir="ltr" style="unicode-bidi: isolate">{[()]}</span></td>
+            <td>YES</td>
+            <td>جميع الأقواس أُغلقت بالترتيب الصحيح</td>
+          </tr>
+          <tr>
+            <td><span dir="ltr" style="unicode-bidi: isolate">([)]</span></td>
+            <td>NO</td>
+            <td>ترتيب الإغلاق غير صحيح</td>
+          </tr>
+          <tr>
+            <td><span dir="ltr" style="unicode-bidi: isolate">((</span></td>
+            <td>NO</td>
+            <td>بقيت أقواس مفتوحة داخل Stack</td>
+          </tr>
+          <tr>
+            <td><span dir="ltr" style="unicode-bidi: isolate">)</span></td>
+            <td>NO</td>
+            <td>يوجد قوس إغلاق دون قوس فتح سابق</td>
+          </tr>
+        </table>
+        <div class="note a" style="--i: 6">
+          Time Complexity: O(n) · Space Complexity: O(n)
         </div>
+      </div>
     </section>
 
     <section class="s d" id="s32">
-        <div class="in">
-            <div class="gear" style="left:-230px;top:-120px;width:680px;opacity:.14"></div>
-            <div class="sun" style="left:-120px;top:60px;opacity:.5"></div>
-            <h2 class="a">Problem 2: Two Sum</h2>
-            <div class="problem-meta a" style="--i:1"><span>Problem 2</span><span>Topic: Hashing</span><span>Arrays</span></div>
-
-            <div class="statement a" style="--i:2">
-                <div class="statement-card description">
-                    <h3>Problem Description</h3>
-                    <p>
-                        Given an array of <b dir="ltr">n</b> integers and an integer
-                        <b dir="ltr">Target</b>, determine whether there are two distinct
-                        elements in the array whose sum is equal to <b dir="ltr">Target</b>.
-                    </p>
-                    <p>
-                        You must use two different array elements. The same element cannot
-                        be used twice.
-                    </p>
-                </div>
-
-                <div class="statement-details">
-                    <div class="statement-card">
-                        <h3>Input</h3>
-                        <p><b>Line 1:</b> An integer <b dir="ltr">n</b>, the number of elements.</p>
-                        <p><b>Line 2:</b> <b dir="ltr">n</b> integers representing the array.</p>
-                        <p><b>Line 3:</b> An integer <b dir="ltr">Target</b>, the required sum.</p>
-                    </div>
-
-                    <div class="statement-card">
-                        <h3>Output</h3>
-                        <p>
-                            Print <b>YES</b> if two distinct elements have a sum equal to
-                            <b dir="ltr">Target</b>; otherwise, print <b>NO</b>.
-                        </p>
-                    </div>
-
-                    <div class="statement-card">
-                        <h3>Constraints</h3>
-                        <code dir="ltr">2 ≤ n ≤ 200,000</code>
-                        <code dir="ltr">-10⁹ ≤ a[i] ≤ 10⁹</code>
-                        <code dir="ltr">-10⁹ ≤ Target ≤ 10⁹</code>
-                    </div>
-                </div>
-
-                <div class="statement-card examples">
-                    <h3>Examples</h3>
-                    <div class="example-grid">
-                        <div>
-                            <h4>Sample Input</h4>
-                            <pre dir="ltr">5
-2 7 11 15 3
-9</pre>
-                        </div>
-                        <div>
-                            <h4>Sample Output</h4>
-                            <pre dir="ltr">YES</pre>
-                        </div>
-                        <div>
-                            <h4>Sample Input</h4>
-                            <pre dir="ltr">3
-1 2 3
-7</pre>
-                        </div>
-                        <div>
-                            <h4>Sample Output</h4>
-                            <pre dir="ltr">NO</pre>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="in">
+        <div
+          class="gear"
+          style="left: -230px; top: -120px; width: 680px; opacity: 0.14"
+        ></div>
+        <div class="sun" style="left: -120px; top: 60px; opacity: 0.5"></div>
+        <h2 class="a">Problem 2: Two Sum</h2>
+        <div class="problem-meta a" style="--i: 1">
+          <span>Problem 2</span><span>Topic: Hashing</span><span>Arrays</span>
         </div>
+
+        <div class="statement a" style="--i: 2">
+          <div class="statement-card description">
+            <h3>Problem Description</h3>
+            <p>
+              Given an array of <b dir="ltr">n</b> integers and an integer
+              <b dir="ltr">Target</b>, determine whether there are two distinct
+              elements in the array whose sum is equal to
+              <b dir="ltr">Target</b>.
+            </p>
+            <p>
+              You must use two different array elements. The same element cannot
+              be used twice.
+            </p>
+          </div>
+
+          <div class="statement-details">
+            <div class="statement-card">
+              <h3>Input</h3>
+              <p>
+                <b>Line 1:</b> An integer <b dir="ltr">n</b>, the number of
+                elements.
+              </p>
+              <p>
+                <b>Line 2:</b> <b dir="ltr">n</b> integers representing the
+                array.
+              </p>
+              <p>
+                <b>Line 3:</b> An integer <b dir="ltr">Target</b>, the required
+                sum.
+              </p>
+            </div>
+
+            <div class="statement-card">
+              <h3>Output</h3>
+              <p>
+                Print <b>YES</b> if two distinct elements have a sum equal to
+                <b dir="ltr">Target</b>; otherwise, print <b>NO</b>.
+              </p>
+            </div>
+
+            <div class="statement-card">
+              <h3>Constraints</h3>
+              <code dir="ltr">2 ≤ n ≤ 200,000</code>
+              <code dir="ltr">-10⁹ ≤ a[i] ≤ 10⁹</code>
+              <code dir="ltr">-10⁹ ≤ Target ≤ 10⁹</code>
+            </div>
+          </div>
+
+          <div class="statement-card examples">
+            <h3>Examples</h3>
+            <div class="example-grid">
+              <div>
+                <h4>Sample Input</h4>
+                <pre dir="ltr">
+5
+2 7 11 15 3
+9</pre
+                >
+              </div>
+              <div>
+                <h4>Sample Output</h4>
+                <pre dir="ltr">YES</pre>
+              </div>
+              <div>
+                <h4>Sample Input</h4>
+                <pre dir="ltr">
+3
+1 2 3
+7</pre
+                >
+              </div>
+              <div>
+                <h4>Sample Output</h4>
+                <pre dir="ltr">NO</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="s l" id="s33">
-        <div class="in">
-            <div class="gear" style="left:-220px;bottom:-260px;width:600px;opacity:.07"></div>
-            <h2 class="a">المسألة 2: من الحل المباشر إلى الحل الأفضل</h2>
-            <div class="row ">
-                <div class="st a z" style="--i:1"><b>الحل المباشر</b>
-                    <p>استخدام حلقتين متداخلتين لمقارنة كل عنصر مع العناصر الأخرى، بتعقيد O(n²)</p>
-                </div>
-                <div class="st a z" style="--i:2"><b>تحليل المشكلة</b>
-                    <p>لكل رقم x نحتاج إلى معرفة ما إذا كان الرقم Target - x موجوداً</p>
-                </div>
-                <div class="st a z" style="--i:3"><b>الفكرة الأفضل</b>
-                    <p>نستخدم Hash Set للتحقق بسرعة من وجود الرقم المطلوب</p>
-                </div>
-            </div>
+      <div class="in">
+        <div
+          class="gear"
+          style="left: -220px; bottom: -260px; width: 600px; opacity: 0.07"
+        ></div>
+        <h2 class="a">المسألة 2: من الحل المباشر إلى الحل الأفضل</h2>
+        <div class="row">
+          <div class="st a z" style="--i: 1">
+            <b>الحل المباشر</b>
+            <p>
+              استخدام حلقتين متداخلتين لمقارنة كل عنصر مع العناصر الأخرى، بتعقيد
+              O(n²)
+            </p>
+          </div>
+          <div class="st a z" style="--i: 2">
+            <b>تحليل المشكلة</b>
+            <p>لكل رقم x نحتاج إلى معرفة ما إذا كان الرقم Target - x موجوداً</p>
+          </div>
+          <div class="st a z" style="--i: 3">
+            <b>الفكرة الأفضل</b>
+            <p>نستخدم Hash Set للتحقق بسرعة من وجود الرقم المطلوب</p>
+          </div>
         </div>
+      </div>
     </section>
     <section class="s l" id="s34">
-        <div class="in">
-            <div class="gear" style="right:-200px;bottom:-250px;width:600px;opacity:.07"></div>
-            <h2 class="a">المسألة 2: مقارنة الحلول والاختبار</h2>
-            <table class="tb a" style="--i:2">
-                <tr>
-                    <th>الحل</th>
-                    <th>Time Complexity</th>
-                    <th>Space Complexity</th>
-                </tr>
-                <tr>
-                    <td>حلقتان متداخلتان</td>
-                    <td>O(n²)</td>
-                    <td>O(1)</td>
-                </tr>
-                <tr>
-                    <td>Hash Set</td>
-                    <td>O(n) متوسطاً</td>
-                    <td>O(n)</td>
-                </tr>
-            </table>
-            <div class="note a" style="--i:6">من الحالات المهمة: عنصر واحد، أرقام سالبة، وعدم استخدام العنصر نفسه مرتين.
-                مثال: <span dir="ltr" style="unicode-bidi:isolate">[3]</span> مع <span dir="ltr"
-                    style="unicode-bidi:isolate">Target = 6</span> تكون النتيجة NO</div>
+      <div class="in">
+        <div
+          class="gear"
+          style="right: -200px; bottom: -250px; width: 600px; opacity: 0.07"
+        ></div>
+        <h2 class="a">المسألة 2: مقارنة الحلول والاختبار</h2>
+        <table class="tb a" style="--i: 2">
+          <tr>
+            <th>الحل</th>
+            <th>Time Complexity</th>
+            <th>Space Complexity</th>
+          </tr>
+          <tr>
+            <td>حلقتان متداخلتان</td>
+            <td>O(n²)</td>
+            <td>O(1)</td>
+          </tr>
+          <tr>
+            <td>Hash Set</td>
+            <td>O(n) متوسطاً</td>
+            <td>O(n)</td>
+          </tr>
+        </table>
+        <div class="note a" style="--i: 6">
+          من الحالات المهمة: عنصر واحد، أرقام سالبة، وعدم استخدام العنصر نفسه
+          مرتين. مثال:
+          <span dir="ltr" style="unicode-bidi: isolate">[3]</span> مع
+          <span dir="ltr" style="unicode-bidi: isolate">Target = 6</span> تكون
+          النتيجة NO
         </div>
+      </div>
     </section>
 
     <section class="s d" id="s35">
-        <div class="in">
-            <div class="gear" style="left:-230px;top:-120px;width:680px;opacity:.14"></div>
-            <div class="sun" style="left:-120px;top:60px;opacity:.5"></div>
-            <h2 class="a">Problem 3: Binary Search</h2>
-            <div class="problem-meta a" style="--i:1"><span>Problem 3</span><span>Topic: Binary Search</span><span>Searching</span></div>
-
-            <div class="statement a" style="--i:2">
-                <div class="statement-card description">
-                    <h3>Problem Description</h3>
-                    <p>
-                        Given a sorted array of <b dir="ltr">n</b> integers in ascending order
-                        and an integer <b dir="ltr">Target</b>, determine whether
-                        <b dir="ltr">Target</b> exists in the array.
-                    </p>
-                    <p>
-                        Your solution must use Binary Search to efficiently find the target
-                        by repeatedly dividing the search range into two halves.
-                    </p>
-                </div>
-
-                <div class="statement-details">
-                    <div class="statement-card">
-                        <h3>Input</h3>
-                        <p>
-                            <b>Line 1:</b> An integer <b dir="ltr">n</b>, the number of elements.
-                        </p>
-                        <p>
-                            <b>Line 2:</b> <b dir="ltr">n</b> integers sorted in ascending order.
-                        </p>
-                        <p>
-                            <b>Line 3:</b> An integer <b dir="ltr">Target</b>, the value to search for.
-                        </p>
-                    </div>
-
-                    <div class="statement-card">
-                        <h3>Output</h3>
-                        <p>
-                            Print <b>YES</b> if <b dir="ltr">Target</b> exists in the array;
-                            otherwise, print <b>NO</b>.
-                        </p>
-                    </div>
-
-                    <div class="statement-card">
-                        <h3>Constraints</h3>
-                        <code dir="ltr">1 ≤ n ≤ 200,000</code>
-                        <code dir="ltr">-10⁹ ≤ a[i] ≤ 10⁹</code>
-                        <code dir="ltr">-10⁹ ≤ Target ≤ 10⁹</code>
-                        <p>The array is sorted in ascending order.</p>
-                    </div>
-                </div>
-
-                <div class="statement-card examples">
-                    <h3>Examples</h3>
-                    <div class="example-grid">
-                        <div>
-                            <h4>Sample Input</h4>
-                            <pre dir="ltr">7
-1 3 5 7 9 11 13
-9</pre>
-                        </div>
-                        <div>
-                            <h4>Sample Output</h4>
-                            <pre dir="ltr">YES</pre>
-                        </div>
-                        <div>
-                            <h4>Sample Input</h4>
-                            <pre dir="ltr">5
-2 4 6 8 10
-7</pre>
-                        </div>
-                        <div>
-                            <h4>Sample Output</h4>
-                            <pre dir="ltr">NO</pre>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="in">
+        <div
+          class="gear"
+          style="left: -230px; top: -120px; width: 680px; opacity: 0.14"
+        ></div>
+        <div class="sun" style="left: -120px; top: 60px; opacity: 0.5"></div>
+        <h2 class="a">Problem 3: Binary Search</h2>
+        <div class="problem-meta a" style="--i: 1">
+          <span>Problem 3</span><span>Topic: Binary Search</span
+          ><span>Searching</span>
         </div>
+
+        <div class="statement a" style="--i: 2">
+          <div class="statement-card description">
+            <h3>Problem Description</h3>
+            <p>
+              Given a sorted array of <b dir="ltr">n</b> integers in ascending
+              order and an integer <b dir="ltr">Target</b>, determine whether
+              <b dir="ltr">Target</b> exists in the array.
+            </p>
+            <p>
+              Your solution must use Binary Search to efficiently find the
+              target by repeatedly dividing the search range into two halves.
+            </p>
+          </div>
+
+          <div class="statement-details">
+            <div class="statement-card">
+              <h3>Input</h3>
+              <p>
+                <b>Line 1:</b> An integer <b dir="ltr">n</b>, the number of
+                elements.
+              </p>
+              <p>
+                <b>Line 2:</b> <b dir="ltr">n</b> integers sorted in ascending
+                order.
+              </p>
+              <p>
+                <b>Line 3:</b> An integer <b dir="ltr">Target</b>, the value to
+                search for.
+              </p>
+            </div>
+
+            <div class="statement-card">
+              <h3>Output</h3>
+              <p>
+                Print <b>YES</b> if <b dir="ltr">Target</b> exists in the array;
+                otherwise, print <b>NO</b>.
+              </p>
+            </div>
+
+            <div class="statement-card">
+              <h3>Constraints</h3>
+              <code dir="ltr">1 ≤ n ≤ 200,000</code>
+              <code dir="ltr">-10⁹ ≤ a[i] ≤ 10⁹</code>
+              <code dir="ltr">-10⁹ ≤ Target ≤ 10⁹</code>
+              <p>The array is sorted in ascending order.</p>
+            </div>
+          </div>
+
+          <div class="statement-card examples">
+            <h3>Examples</h3>
+            <div class="example-grid">
+              <div>
+                <h4>Sample Input</h4>
+                <pre dir="ltr">
+7
+1 3 5 7 9 11 13
+9</pre
+                >
+              </div>
+              <div>
+                <h4>Sample Output</h4>
+                <pre dir="ltr">YES</pre>
+              </div>
+              <div>
+                <h4>Sample Input</h4>
+                <pre dir="ltr">
+5
+2 4 6 8 10
+7</pre
+                >
+              </div>
+              <div>
+                <h4>Sample Output</h4>
+                <pre dir="ltr">NO</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="s l" id="s36">
-        <div class="in">
-            <div class="gear" style="right:-200px;bottom:-250px;width:600px;opacity:.07"></div>
-            <h2 class="a">المسألة 3: تقسيم مجال البحث</h2>
-            <div class="pic a l2" style="--i:2;width:628px"><img src="images/bsearch.jpg" alt="" /></div>
-            <div class="pan a r" style="--i:3">
-                <h3>كيف يعمل Binary Search؟</h3>
-                <ul>
-                    <li>نقارن Target مع العنصر الموجود في المنتصف</li>
-                    <li>إذا كان Target أصغر، نكمل البحث في النصف الأيسر، وإذا كان أكبر نبحث في النصف الأيمن</li>
-                    <li>إذا تساويا، نكون قد وجدنا العنصر</li>
-                </ul>
-            </div>
+      <div class="in">
+        <div
+          class="gear"
+          style="right: -200px; bottom: -250px; width: 600px; opacity: 0.07"
+        ></div>
+        <h2 class="a">المسألة 3: تقسيم مجال البحث</h2>
+        <div class="pic a l2" style="--i: 2; width: 628px">
+          <img src="images/bsearch.jpg" alt="" />
         </div>
+        <div class="pan a r" style="--i: 3">
+          <h3>كيف يعمل Binary Search؟</h3>
+          <ul>
+            <li>نقارن Target مع العنصر الموجود في المنتصف</li>
+            <li>
+              إذا كان Target أصغر، نكمل البحث في النصف الأيسر، وإذا كان أكبر
+              نبحث في النصف الأيمن
+            </li>
+            <li>إذا تساويا، نكون قد وجدنا العنصر</li>
+          </ul>
+        </div>
+      </div>
     </section>
     <section class="s l" id="s37">
-        <div class="in">
-            <div class="gear" style="left:-220px;bottom:-260px;width:600px;opacity:.07"></div>
-            <h2 class="a">المسألة 3: مقارنة الحلول والاختبار</h2>
-            <table class="tb a" style="--i:2">
-                <tr>
-                    <th>الطريقة</th>
-                    <th>Time Complexity</th>
-                    <th>الخطوات عند مليون عنصر</th>
-                </tr>
-                <tr>
-                    <td>Linear Search</td>
-                    <td>O(n)</td>
-                    <td>حتى 1,000,000 خطوة</td>
-                </tr>
-                <tr>
-                    <td>Binary Search</td>
-                    <td>O(log n)</td>
-                    <td>حتى 20 خطوة</td>
-                </tr>
-            </table>
-            <div class="note a" style="--i:6">يشترط أن تكون البيانات مرتبة. ومن الحالات المهمة: أول عنصر، وآخر عنصر،
-                وعنصر غير موجود، ومصفوفة تحتوي على عنصر واحد</div>
+      <div class="in">
+        <div
+          class="gear"
+          style="left: -220px; bottom: -260px; width: 600px; opacity: 0.07"
+        ></div>
+        <h2 class="a">المسألة 3: مقارنة الحلول والاختبار</h2>
+        <table class="tb a" style="--i: 2">
+          <tr>
+            <th>الطريقة</th>
+            <th>Time Complexity</th>
+            <th>الخطوات عند مليون عنصر</th>
+          </tr>
+          <tr>
+            <td>Linear Search</td>
+            <td>O(n)</td>
+            <td>حتى 1,000,000 خطوة</td>
+          </tr>
+          <tr>
+            <td>Binary Search</td>
+            <td>O(log n)</td>
+            <td>حتى 20 خطوة</td>
+          </tr>
+        </table>
+        <div class="note a" style="--i: 6">
+          يشترط أن تكون البيانات مرتبة. ومن الحالات المهمة: أول عنصر، وآخر عنصر،
+          وعنصر غير موجود، ومصفوفة تحتوي على عنصر واحد
         </div>
+      </div>
     </section>
     <section class="s l" id="s38">
-        <div class="in">
-            <div class="gear" style="right:-200px;bottom:-250px;width:600px;opacity:.07"></div>
-            <h2 class="a">ماذا تعلّمنا من المسائل الثلاث؟</h2>
-            <div class="row ">
-                <div class="st a z" style="--i:1"><b>Balanced Parentheses</b>
-                    <p>اختيار Data Structure المناسبة لطبيعة المشكلة: Stack</p>
-                </div>
-                <div class="st a z" style="--i:2"><b>Two Sum</b>
-                    <p>استخدام Hash Set لتقليل Time Complexity من O(n²) إلى O(n) متوسطاً</p>
-                </div>
-                <div class="st a z" style="--i:3"><b>Binary Search</b>
-                    <p>استغلال خاصية ترتيب البيانات للوصول إلى O(log n)</p>
-                </div>
-            </div>
-            <div class="note a" style="--i:6">Think Before You Code</div>
+      <div class="in">
+        <div
+          class="gear"
+          style="right: -200px; bottom: -250px; width: 600px; opacity: 0.07"
+        ></div>
+        <h2 class="a">ماذا تعلّمنا من المسائل الثلاث؟</h2>
+        <div class="row">
+          <div class="st a z" style="--i: 1">
+            <b>Balanced Parentheses</b>
+            <p>اختيار Data Structure المناسبة لطبيعة المشكلة: Stack</p>
+          </div>
+          <div class="st a z" style="--i: 2">
+            <b>Two Sum</b>
+            <p>
+              استخدام Hash Set لتقليل Time Complexity من O(n²) إلى O(n) متوسطاً
+            </p>
+          </div>
+          <div class="st a z" style="--i: 3">
+            <b>Binary Search</b>
+            <p>استغلال خاصية ترتيب البيانات للوصول إلى O(log n)</p>
+          </div>
         </div>
+        <div class="note a" style="--i: 6">Think Before You Code</div>
+      </div>
     </section>
     <section class="s d" id="s39">
-        <div class="in">
-            <div class="gear" style="left:-230px;top:-120px;width:680px;opacity:.14"></div>
-            <div class="sun" style="left:-120px;top:60px;opacity:.5"></div>
-            <div class="ctr">
-                <div class="q a" style="--i:1"><mark>Problem Solving Challenge</mark></div>
-                <div class="t a" style="--i:3">تحدٍّ يجمع بين المفاهيم والمهارات التي تناولناها خلال الورشة</div>
-                <div class="t a" style="--i:4">تطبيق عملي على التفكير والتحليل واختيار الحل المناسب</div>
-            </div>
+      <div class="in">
+        <div
+          class="gear"
+          style="left: -230px; top: -120px; width: 680px; opacity: 0.14"
+        ></div>
+        <div class="sun" style="left: -120px; top: 60px; opacity: 0.5"></div>
+        <div class="ctr">
+          <div class="q a" style="--i: 1">
+            <mark>Problem Solving Challenge</mark>
+          </div>
+          <div class="t a" style="--i: 3">
+            تحدٍّ يجمع بين المفاهيم والمهارات التي تناولناها خلال الورشة
+          </div>
+          <div class="t a" style="--i: 4">
+            تطبيق عملي على التفكير والتحليل واختيار الحل المناسب
+          </div>
         </div>
+      </div>
     </section>
     <section class="s l" id="s40">
-        <div class="in">
-            <div class="gear" style="right:-200px;bottom:-250px;width:600px;opacity:.07"></div>
-            <h2 class="a">الخلاصة</h2>
-            <div class="row n5">
-                <div class="st a z" style="--i:1"><b>Think Before You Code</b>
-                    <p>افهم المشكلة قبل كتابة الكود</p>
-                </div>
-                <div class="st a z" style="--i:2"><b>Correctness Before Optimization</b>
-                    <p>تأكد من صحة الحل، ثم حسّن كفاءته</p>
-                </div>
-                <div class="st a z" style="--i:3"><b>Every Problem Has a Strategy</b>
-                    <p>اختر Data Structure وAlgorithm بما يناسب طبيعة المشكلة</p>
-                </div>
-            </div>
-            <div class="note a" style="--i:6">Problem Solver: يفهم، يحلّل، يصمّم، ينفّذ، يختبر، ويحسّن</div>
+      <div class="in">
+        <div
+          class="gear"
+          style="right: -200px; bottom: -250px; width: 600px; opacity: 0.07"
+        ></div>
+        <h2 class="a">الخلاصة</h2>
+        <div class="row n5">
+          <div class="st a z" style="--i: 1">
+            <b>Think Before You Code</b>
+            <p>افهم المشكلة قبل كتابة الكود</p>
+          </div>
+          <div class="st a z" style="--i: 2">
+            <b>Correctness Before Optimization</b>
+            <p>تأكد من صحة الحل، ثم حسّن كفاءته</p>
+          </div>
+          <div class="st a z" style="--i: 3">
+            <b>Every Problem Has a Strategy</b>
+            <p>اختر Data Structure وAlgorithm بما يناسب طبيعة المشكلة</p>
+          </div>
         </div>
+        <div class="note a" style="--i: 6">
+          Problem Solver: يفهم، يحلّل، يصمّم، ينفّذ، يختبر، ويحسّن
+        </div>
+      </div>
     </section>
     <section class="s d" id="s41">
-        <div class="in">
-            <div class="gear" style="left:-230px;top:-120px;width:680px;opacity:.14"></div>
-            <div class="sun" style="left:-120px;top:60px;opacity:.5"></div>
-            <div class="ctr">
-                <div class="disc a z" style="--i:1;width:170px;height:170px"><img src="images/club-logo.png"
-                        alt="ETC" /></div>
-                <div class="q a" style="--i:2">شكراً لمشاركتكم! <mark>ETC</mark></div>
-                <div class="t a" style="--i:3">نقدّر آراءكم وملاحظاتكم حول الورشة</div>
-                <div class="t a" style="--i:4">ترقّبوا أنشطة النادي القادمة</div>
-            </div>
+      <div class="in">
+        <div
+          class="gear"
+          style="left: -230px; top: -120px; width: 680px; opacity: 0.14"
+        ></div>
+        <div class="sun" style="left: -120px; top: 60px; opacity: 0.5"></div>
+        <div class="ctr">
+          <div class="disc a z" style="--i: 1; width: 170px; height: 170px">
+            <img src="images/club-logo.png" alt="ETC" />
+          </div>
+          <div class="q a" style="--i: 2">
+            شكراً لمشاركتكم! <mark>ETC</mark>
+          </div>
+          <div class="t a" style="--i: 3">
+            نقدّر آراءكم وملاحظاتكم حول الورشة
+          </div>
+          <div class="t a" style="--i: 4">ترقّبوا أنشطة النادي القادمة</div>
         </div>
+      </div>
     </section>
-    <div id="ui"><button id="pv" aria-label="السابق">&#8592;</button>
-        <div id="dots"></div><button id="nx" aria-label="التالي">&#8594;</button><button id="fs"
-            aria-label="ملء الشاشة">&#x26F6;</button>
+    <div id="ui">
+      <button id="pv" aria-label="السابق">&#8592;</button>
+      <div id="dots"></div>
+      <button id="nx" aria-label="التالي">&#8594;</button
+      ><button id="fs" aria-label="ملء الشاشة">&#x26F6;</button>
     </div>
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
