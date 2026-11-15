@@ -752,205 +752,187 @@ mark {
    CODEFORCES-STYLE PROBLEM STATEMENTS
    ================================= */
 
+/* =================================
+   CODEFORCES-STYLE PROBLEM STATEMENTS
+   ================================= */
 .statement {
   position: absolute;
   top: 125px;
   right: 90px;
   left: 90px;
   bottom: 55px;
-
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto minmax(0, 1fr);
-  gap: 14px;
-
-  direction: rtl;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  grid-template-rows: minmax(145px, auto) minmax(0, 1fr);
+  grid-template-areas: "description description" "examples details";
+  gap: 12px;
+  direction: ltr;
   min-height: 0;
+  text-align: left;
 }
-
-/* Shared card styling */
 .statement-card {
   min-width: 0;
   min-height: 0;
-  padding: 15px 20px;
-
-  border-radius: 17px;
-  background: rgba(255, 255, 255, 0.075);
-  border: 1px solid rgba(207, 180, 96, 0.35);
-
-  text-align: right;
+  padding: 14px 18px;
+  border-radius: 16px;
+  background: rgba(255,255,255,.075);
+  border: 1px solid rgba(207,180,96,.35);
+  text-align: left;
   overflow: hidden;
+  direction: ltr;
 }
-
 .statement-card h3 {
   color: var(--gold2);
-  font-size: 23px;
+  font-size: 22px;
   font-weight: 800;
-  margin-bottom: 9px;
+  margin: 0 0 8px;
+  text-align: left;
 }
-
 .statement-card p {
   color: #edf3fc;
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 7px;
+  font-size: 17px;
+  line-height: 1.42;
+  margin: 0 0 6px;
+  text-align: left;
+  overflow-wrap: anywhere;
 }
-
-.statement-card b {
-  color: var(--gold2);
-  font-weight: 800;
-}
-
-/* Problem Description */
+.statement-card b { color: var(--gold2); font-weight: 800; }
 .statement .description {
-  grid-column: 1 / -1;
-  padding: 16px 22px;
+  grid-area: description;
+  padding: 13px 20px;
+  overflow: auto;
 }
-
-.statement .description p {
-  font-size: 19px;
-  line-height: 1.5;
-}
-
-/* Input / Output / Constraints */
+.statement .description p { font-size: 18px; line-height: 1.42; }
 .statement-details {
-  display: flex;
-  flex-direction: column;
+  grid-area: details;
+  display: grid;
+  grid-template-rows: 1.25fr .8fr 1fr;
   gap: 10px;
   min-height: 0;
+  min-width: 0;
 }
-
 .statement-details .statement-card {
-  flex: 1;
-  padding: 13px 18px;
+  padding: 11px 15px;
+  overflow: auto;
 }
-
-.statement-details .statement-card h3 {
-  font-size: 22px;
-  margin-bottom: 7px;
-}
-
-.statement-details .statement-card p {
-  font-size: 17px;
-  line-height: 1.45;
-  margin-bottom: 5px;
-}
-
-/* Constraints code */
+.statement-details .statement-card h3 { font-size: 20px; margin-bottom: 5px; }
+.statement-details .statement-card p { font-size: 15.5px; line-height: 1.35; margin-bottom: 4px; }
 .statement-card code {
   display: block;
   direction: ltr;
   text-align: left;
-
   color: #fff;
-  font: 600 17px Consolas, monospace;
-
-  margin: 6px 0;
+  font: 600 15px/1.35 Consolas, Menlo, monospace;
+  margin: 4px 0;
   white-space: nowrap;
 }
-
-/* Examples */
 .statement .examples {
+  grid-area: examples;
   display: flex;
   flex-direction: column;
   min-height: 0;
-  padding: 15px 18px;
+  padding: 13px 15px;
 }
-
 .example-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  grid-template-rows: 1fr 1fr;
+  gap: 9px;
   min-height: 0;
+  flex: 1;
 }
-
-.example-grid > div {
-  min-width: 0;
-}
-
-.example-grid h4 {
-  color: var(--sky);
-  font-size: 17px;
-  font-weight: 800;
-  margin-bottom: 7px;
-}
-
+.example-grid > div { min-width: 0; min-height: 0; }
+.example-grid h4 { color: var(--sky); font-size: 15px; font-weight: 800; margin-bottom: 5px; }
 .example-grid pre {
   direction: ltr;
   text-align: left;
   white-space: pre-wrap;
   overflow-wrap: anywhere;
-
-  background: rgba(0, 0, 0, 0.35);
-  border: 1px solid rgba(207, 180, 96, 0.25);
+  background: rgba(0,0,0,.35);
+  border: 1px solid rgba(207,180,96,.25);
   border-radius: 9px;
-
-  padding: 10px 12px;
+  padding: 8px 10px;
   color: #fff;
-
-  font: 600 16px/1.5 Consolas, monospace;
-  min-height: 45px;
+  font: 600 15px/1.35 Consolas, Menlo, monospace;
+  min-height: 40px;
+  max-height: 100%;
+  overflow: auto;
   margin: 0;
 }
+.statement [dir="ltr"] { unicode-bidi: isolate; }
+.s.on .statement-card { backface-visibility: hidden; }
 
-/* Keep technical content left-to-right */
-.statement [dir="ltr"] {
-  unicode-bidi: isolate;
+/* Programming-language comparison slides */
+.lang-lead {
+  position: absolute; top: 130px; right: 100px; left: 100px;
+  padding: 20px 26px; border-radius: 20px;
+  background: rgba(255,255,255,.075); border: 1px solid rgba(207,180,96,.35);
+  color: var(--fg); font-size: 24px; line-height: 1.55; text-align: center;
 }
-
-/* Problem statement animation spacing */
-.s.on .statement-card {
-  backface-visibility: hidden;
+.lang-lead p + p { margin-top: 8px; font-size: 21px; color: var(--sub); }
+.lang-grid {
+  position: absolute; top: 290px; right: 100px; left: 100px; bottom: 115px;
+  display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 16px;
 }
-
-/* Smaller screens */
-@media (max-width: 900px) {
-  .statement {
-    right: 45px;
-    left: 45px;
-  }
-
-  .statement-card {
-    padding: 12px 15px;
-  }
-
-  .statement-card p {
-    font-size: 16px;
-  }
-
-  .example-grid pre {
-    font-size: 14px;
-  }
+.lang-card {
+  border: 1px solid var(--cardbd); background: var(--cardbg); border-radius: 20px;
+  padding: 24px 18px; display: flex; flex-direction: column; justify-content: center;
+  text-align: center; min-width: 0;
 }
-
-
-/* Codeforces-inspired problem header (original workshop questions retained) */
-.problem-meta {
-  position: absolute;
-  top: 101px;
-  right: 92px;
-  left: 92px;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  direction: ltr;
-  color: #d7e4f5;
-  font: 700 14px/1.3 Consolas, Menlo, monospace;
-  z-index: 2;
+.lang-card .lang-mark { font: 800 32px/1.2 Consolas,monospace; color: var(--gold2); margin-bottom: 18px; }
+.s.l .lang-card .lang-mark { color: var(--blue); }
+.lang-card b { font-size: 25px; color: var(--fg); margin-bottom: 10px; }
+.lang-card p { color: var(--sub); font-size: 19px; line-height: 1.5; }
+.lang-table { top: 145px !important; }
+.lang-table td, .lang-table th { padding: 16px 18px; font-size: 21px; line-height: 1.45; }
+.lang-table td:first-child { direction: ltr; font-weight: 800; }
+.lang-foot {
+  position: absolute; right: 110px; left: 110px; bottom: 82px;
+  text-align: center; color: var(--blue); font-size: 21px; font-weight: 700;
 }
-.problem-meta span {
-  padding: 5px 10px;
-  border-radius: 5px;
-  background: rgba(255,255,255,.075);
-  border: 1px solid rgba(207,180,96,.28);
+.lang-choice {
+  position: absolute; top: 145px; right: 110px; left: 110px;
+  padding: 25px 32px; border-radius: 22px; border: 1px solid var(--cardbd);
+  background: var(--cardbg); color: var(--fg);
 }
-.statement { top: 139px; bottom: 48px; }
-.statement .description p { font-size: 18px; line-height: 1.42; }
-.statement-details .statement-card p { font-size: 16px; line-height: 1.38; }
-.statement-card code { font-size: 15px; margin: 4px 0; }
-.example-grid pre { font-size: 14px; line-height: 1.35; padding: 8px 10px; }
-@media (max-width: 900px) {
-  .problem-meta { right: 45px; left: 45px; gap: 6px; font-size: 12px; }
-  .problem-meta span { padding: 4px 6px; }
+.lang-choice-main { display: flex; align-items: center; gap: 22px; margin-bottom: 18px; }
+.lang-choice-main span { font: 800 42px Consolas,monospace; color: var(--gold2); background: rgba(207,180,96,.16); padding: 12px 18px; border-radius: 14px; }
+.lang-choice-main b { font-size: 27px; }
+.lang-choice ul { padding-left: 25px; }
+.lang-choice li { font-size: 21px; line-height: 1.5; margin: 7px 0; color: var(--sub); }
+.lang-choice code, .lang-bottom code { direction:ltr; unicode-bidi:isolate; font:700 18px Consolas,monospace; }
+.lang-bottom {
+  position: absolute; top: 435px; right: 110px; left: 110px;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 18px;
+}
+.lang-bottom > div { border-radius: 18px; padding: 18px 22px; background: var(--cardbg); border: 1px solid var(--cardbd); }
+.lang-bottom b { display:block; font-size:22px; color:var(--fg); margin-bottom:8px; }
+.lang-bottom p { color:var(--sub); font-size:18px; line-height:1.45; }
+
+@media (max-width: 1100px) {
+  .statement { right: 45px; left: 45px; top: 118px; bottom: 48px; gap: 9px; grid-template-rows: minmax(130px,auto) minmax(0,1fr); }
+  .statement-card { padding: 10px 12px; }
+  .statement-card p { font-size: 15px; }
+  .statement .description p { font-size: 16px; }
+  .statement-details .statement-card p { font-size: 14px; }
+  .example-grid pre { font-size: 13px; }
+  .lang-lead { right:60px; left:60px; font-size:21px; }
+  .lang-grid { right:60px; left:60px; gap:10px; }
+  .lang-card { padding:15px 10px; }
+  .lang-card b { font-size:21px; }
+  .lang-card p { font-size:16px; }
+}
+@media (max-height: 760px) {
+  .statement { top: 112px; bottom: 42px; grid-template-rows: minmax(115px,auto) minmax(0,1fr); gap:8px; }
+  .statement-card h3 { font-size:19px; margin-bottom:5px; }
+  .statement-card p, .statement-details .statement-card p { font-size:14px; line-height:1.28; }
+  .statement .description p { font-size:15px; }
+  .statement-card code { font-size:13px; }
+  .example-grid h4 { font-size:13px; }
+  .example-grid pre { font-size:13px; padding:6px 8px; }
+  .lang-lead { top:115px; padding:14px 20px; font-size:20px; }
+  .lang-grid { top:265px; bottom:85px; }
+  .lang-choice { top:125px; padding:18px 25px; }
+  .lang-choice li { font-size:18px; margin:5px 0; }
+  .lang-bottom { top:390px; }
 }
