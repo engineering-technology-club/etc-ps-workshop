@@ -746,3 +746,211 @@ mark {
 .pan ul{margin:0;padding:0;list-style:none}
 .pan li{position:relative;font-size:23px;line-height:1.55;margin-bottom:10px;padding-right:22px;color:var(--fg)}
 .pan li:before{content:'';position:absolute;right:0;top:.62em;width:9px;height:9px;border-radius:50%;background:var(--green)}
+
+
+/* =================================
+   CODEFORCES-STYLE PROBLEM STATEMENTS
+   ================================= */
+
+.statement {
+  position: absolute;
+  top: 125px;
+  right: 90px;
+  left: 90px;
+  bottom: 55px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: 14px;
+
+  direction: rtl;
+  min-height: 0;
+}
+
+/* Shared card styling */
+.statement-card {
+  min-width: 0;
+  min-height: 0;
+  padding: 15px 20px;
+
+  border-radius: 17px;
+  background: rgba(255, 255, 255, 0.075);
+  border: 1px solid rgba(207, 180, 96, 0.35);
+
+  text-align: right;
+  overflow: hidden;
+}
+
+.statement-card h3 {
+  color: var(--gold2);
+  font-size: 23px;
+  font-weight: 800;
+  margin-bottom: 9px;
+}
+
+.statement-card p {
+  color: #edf3fc;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 7px;
+}
+
+.statement-card b {
+  color: var(--gold2);
+  font-weight: 800;
+}
+
+/* Problem Description */
+.statement .description {
+  grid-column: 1 / -1;
+  padding: 16px 22px;
+}
+
+.statement .description p {
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+/* Input / Output / Constraints */
+.statement-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 0;
+}
+
+.statement-details .statement-card {
+  flex: 1;
+  padding: 13px 18px;
+}
+
+.statement-details .statement-card h3 {
+  font-size: 22px;
+  margin-bottom: 7px;
+}
+
+.statement-details .statement-card p {
+  font-size: 17px;
+  line-height: 1.45;
+  margin-bottom: 5px;
+}
+
+/* Constraints code */
+.statement-card code {
+  display: block;
+  direction: ltr;
+  text-align: left;
+
+  color: #fff;
+  font: 600 17px Consolas, monospace;
+
+  margin: 6px 0;
+  white-space: nowrap;
+}
+
+/* Examples */
+.statement .examples {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  padding: 15px 18px;
+}
+
+.example-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  min-height: 0;
+}
+
+.example-grid > div {
+  min-width: 0;
+}
+
+.example-grid h4 {
+  color: var(--sky);
+  font-size: 17px;
+  font-weight: 800;
+  margin-bottom: 7px;
+}
+
+.example-grid pre {
+  direction: ltr;
+  text-align: left;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(207, 180, 96, 0.25);
+  border-radius: 9px;
+
+  padding: 10px 12px;
+  color: #fff;
+
+  font: 600 16px/1.5 Consolas, monospace;
+  min-height: 45px;
+  margin: 0;
+}
+
+/* Keep technical content left-to-right */
+.statement [dir="ltr"] {
+  unicode-bidi: isolate;
+}
+
+/* Problem statement animation spacing */
+.s.on .statement-card {
+  backface-visibility: hidden;
+}
+
+/* Smaller screens */
+@media (max-width: 900px) {
+  .statement {
+    right: 45px;
+    left: 45px;
+  }
+
+  .statement-card {
+    padding: 12px 15px;
+  }
+
+  .statement-card p {
+    font-size: 16px;
+  }
+
+  .example-grid pre {
+    font-size: 14px;
+  }
+}
+
+
+/* Codeforces-inspired problem header (original workshop questions retained) */
+.problem-meta {
+  position: absolute;
+  top: 101px;
+  right: 92px;
+  left: 92px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  direction: ltr;
+  color: #d7e4f5;
+  font: 700 14px/1.3 Consolas, Menlo, monospace;
+  z-index: 2;
+}
+.problem-meta span {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: rgba(255,255,255,.075);
+  border: 1px solid rgba(207,180,96,.28);
+}
+.statement { top: 139px; bottom: 48px; }
+.statement .description p { font-size: 18px; line-height: 1.42; }
+.statement-details .statement-card p { font-size: 16px; line-height: 1.38; }
+.statement-card code { font-size: 15px; margin: 4px 0; }
+.example-grid pre { font-size: 14px; line-height: 1.35; padding: 8px 10px; }
+@media (max-width: 900px) {
+  .problem-meta { right: 45px; left: 45px; gap: 6px; font-size: 12px; }
+  .problem-meta span { padding: 4px 6px; }
+}
